@@ -1,0 +1,23 @@
+{
+  "name": "configurator",
+  "authors": [
+    "stc"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "angular-gettext": "^2.2.1",
+    "angular-local-storage": "^0.2.7"
+  }
+}

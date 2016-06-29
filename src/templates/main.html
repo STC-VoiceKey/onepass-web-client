@@ -1,0 +1,41 @@
+<div class="b-popup__agree" ng-if="agree">
+	<div class="b-popup__agree-bg"></div>
+	<div class="b-popup__agree-text">
+		<div class="b-popup__agree-logo logo__onepass"></div>
+		<span class="b-popup__agree-title txt_h3--highlighted">Terms and conditions of use</span>
+		<span class="b-popup__agree-note">For the best results</span>
+		<div class="b-popup__agree-item">
+			<span class="b-popup__agree-item-icon icon__light"></span>
+			<span class="b-popup__agree-item-text">Find a well lit place</span>
+		</div>
+		<div class="b-popup__agree-item">
+			<span class="b-popup__agree-item-icon icon__mute"></span>
+			<span class="b-popup__agree-item-text">Make sure it's quiet</span>
+		</div>
+		<div class="b-popup__agree-item">
+			<span class="b-popup__agree-item-icon icon__sunglasses"></span>
+			<span class="b-popup__agree-item-text">Take off sunglasses</span>
+		</div>
+		<div class="b-popup__agree-item">
+			<span class="b-popup__agree-item-icon icon__face"></span>
+			<span class="b-popup__agree-item-text">Make your ordinary face</span>
+		</div>
+		<div class="b-popup__agree-accept">
+			I understand that the system will process my biometrical data and agree to take a selfie and record voice samples
+		</div>
+		<div class="b-popup__agree-buttons">
+			<a href="" class="b-popup__agree-cancel link" ng-click="cancel()" />Disagree</a>
+			<button class="b-popup__agree-button button" ng-click="start()" />Agree and continue</button>
+		</div>
+	</div>
+</div>
+<div class="b-auth">
+	<form role="form" name="formAuth" class="b-auth__form">
+		<div class="b-auth__form-logo logo__onepass"></div>
+		<span class="form-error">{{ inputError }}</span>
+		<input type="text" placeholder="example@example.ru" ng-class="{'input--invalid' : inputError}" ng-model="person.id" data-error="asdfasdfasdf" class="b-auth__form-input input" ng-pattern="/^(([^<>()\[\]\\.,;:\s@]+(\.[^<>()\[\]\\.,;:\s@]+)*)|(.+))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/" required />
+		<button type="submit" ng-click="login(person)" ng-disabled="formAuth.$invalid" class="b-auth__form-button button" ng-if="!isReg">Log In</button>
+		<button type="submit" ng-click="registration(person)" ng-disabled="formAuth.$invalid" class="b-auth__form-button button" ng-if="isReg">Next</button>
+		<div class="b-auth__form-reg"><a href="" ng-click="regForm()" class="link" ng-if="!isReg">Registration</a></div>
+	</form>
+</div>

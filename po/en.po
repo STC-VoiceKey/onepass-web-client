@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-06-27 13:08+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#~ msgid "Account"
+#~ msgstr "Account"
+
+#~ msgid "Account Available"
+#~ msgstr "Account Available"
+
+#~ msgid "Account Name"
+#~ msgstr "Account Name"
+
+#~ msgid "Accounts"
+#~ msgstr "Accounts"
+
+#~ msgid "Cards"
+#~ msgstr "Cards"
+
+#~ msgid "Credits"
+#~ msgstr "Credits"
+
+#~ msgid "Currency"
+#~ msgstr "Currency"
+
+#~ msgid "Current Balance"
+#~ msgstr "Current Balance"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid "Edit profile"
+#~ msgstr "Edit profile"
+
+#~ msgid "login"
+#~ msgstr "Login"
+
+#~ msgid "login button"
+#~ msgstr "login"
+
+#~ msgid "Main"
+#~ msgstr "Main"
+
+#~ msgid "More"
+#~ msgstr "More"
+
+#~ msgid "Payments"
+#~ msgstr "Payments"
+
+#~ msgid "registration"
+#~ msgstr "registration"
+
+#~ msgid "STC-Bank"
+#~ msgstr "STC-Bank"
+
+#~ msgid "Transaction"
+#~ msgstr "Transaction"
+
+#~ msgid "out"
+#~ msgstr "logout"
+
+#~ msgid "VoiceKey.Webaccess"
+#~ msgstr "VoiceKey.Webaccess"
+
+#~ msgid "(acquired: {{con.licenses_acquired}})"
+#~ msgstr "(acquired: {{con.licenses_acquired}})"
+
+#~ msgid "Hasp not found"
+#~ msgstr "Hasp not found"
+
+#~ msgid "Licenses"
+#~ msgstr "Licenses"
+
+#~ msgid "Consumers"
+#~ msgstr "Consumers"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Value"
+#~ msgstr "Value"
+
+#~ msgid "licensing page"
+#~ msgstr "licensing page"
+
+#~ msgid "calibration"
+#~ msgstr "Calibration"
+
+#~ msgid "configuration"
+#~ msgstr "Configuration"
+
+#~ msgid "Configuration management system"
+#~ msgstr "Configuration management system"
+
+#~ msgid "docker"
+#~ msgstr "Docker"
+
+#~ msgid "intro"
+#~ msgstr "Intro"
+
+#~ msgid "monitoring"
+#~ msgstr "Monitoring"
+
+#~ msgid "security"
+#~ msgstr "Security"
+
+#~ msgid "{{person.firstname}}"
+#~ msgstr "Nikolay"
+
+#~ msgid "{{person.lastname}}"
+#~ msgstr "Mikheev"
+
+#~ msgid "agent"
+#~ msgstr "Agent"
+
+#~ msgid "Апельсин"
+#~ msgstr "Orange"
+
+#~ msgid "Желтый"
+#~ msgstr "Yellow"
+
+#~ msgid "Машинка"
+#~ msgstr "Car"
+
+#~ msgid "Яблоко"
+#~ msgstr "Apple"

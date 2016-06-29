@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-06-27 13:08+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#~ msgid "Account"
+#~ msgstr "Аккаунт"
+
+#~ msgid "Account Available"
+#~ msgstr "Доступные средства"
+
+#~ msgid "Account Name"
+#~ msgstr "Тип аккаунта"
+
+#~ msgid "Accounts"
+#~ msgstr "Аккаунты"
+
+#~ msgid "Cards"
+#~ msgstr "Карты"
+
+#~ msgid "Credits"
+#~ msgstr "Кредит"
+
+#~ msgid "Currency"
+#~ msgstr "Валюта"
+
+#~ msgid "Current Balance"
+#~ msgstr "Текущий баланс"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid "Edit profile"
+#~ msgstr "Редактировать профиль"
+
+#~ msgid "login"
+#~ msgstr "Вход"
+
+#~ msgid "login button"
+#~ msgstr "вход"
+
+#~ msgid "Main"
+#~ msgstr "Главная"
+
+#~ msgid "More"
+#~ msgstr "Прочее"
+
+#~ msgid "Payments"
+#~ msgstr "Платежи"
+
+#~ msgid "registration"
+#~ msgstr "регистрация"
+
+#~ msgid "STC-Bank"
+#~ msgstr "ЦРТ-Банк"
+
+#~ msgid "Transaction"
+#~ msgstr "Транзакции"
+
+#~ msgid "out"
+#~ msgstr "выход"
+
+#~ msgid "VoiceKey.Webaccess"
+#~ msgstr "VoiceKey.Webaccess"
+
+#~ msgid "(acquired: {{con.licenses_acquired}})"
+#~ msgstr "(использовано: {{con.licenses_acquired}})"
+
+#~ msgid "Hasp not found"
+#~ msgstr "Hasp не найден"
+
+#~ msgid "Licenses"
+#~ msgstr "Сервер лицензий"
+
+#~ msgid "licensing page"
+#~ msgstr "страница лицензий"
+
+#~ msgid "calibration"
+#~ msgstr "Калибровка"
+
+#~ msgid "configuration"
+#~ msgstr "Конфигурация"
+
+#~ msgid "Configuration management system"
+#~ msgstr "Система управления конфигурацией"
+
+#~ msgid "docker"
+#~ msgstr "Развертывание"
+
+#~ msgid "intro"
+#~ msgstr "Главная"
+
+#~ msgid "monitoring"
+#~ msgstr "Мониторинг"
+
+#~ msgid "security"
+#~ msgstr "Доступ"
+
+#~ msgid "{{person.firstname}}"
+#~ msgstr "Николай"
+
+#~ msgid "{{person.lastname}}"
+#~ msgstr "Михеев"
+
+#~ msgid "agent"
+#~ msgstr "Агент"
+
+#~ msgid "Апельсин"
+#~ msgstr "Апельсин"
+
+#~ msgid "Желтый"
+#~ msgstr "Желтый"
+
+#~ msgid "Машинка"
+#~ msgstr "Машинка"
+
+#~ msgid "Яблоко"
+#~ msgstr "Яблоко"
