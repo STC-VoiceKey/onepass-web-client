@@ -4,3 +4,9 @@ Web client for OnePass server.
 
 ## Documentation
 _(Coming soon)_
+
+## Examples
+_(Coming soon)_
+
+## License
+Copyright (c) 2016 STC. Licensed under the FreeBSD License.
