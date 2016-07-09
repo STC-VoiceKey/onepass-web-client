@@ -69,12 +69,12 @@ var prodConfig = {
     port: 9000
 };
 
-gulp.task('serve', function() {
+gulp.task('server', function() {
     browserSync(testConfig);
 });
 
 
-gulp.task('serve:prod', function() {
+gulp.task('server:prod', function() {
     browserSync(prodConfig);
 });
 
