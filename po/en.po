@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2017-09-29 15:02+0300\n"
+"PO-Revision-Date: 2017-10-04 15:22+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -87,9 +87,13 @@ msgstr "Exit"
 msgid "Eyes closed"
 msgstr "Eyes closed"
 
-#: templates\popups.html:111 templates\popups.html:8
+#: templates\popups.html:8
 msgid "Find a well lit place"
 msgstr "Find a well lit place"
+
+#: templates\popups.html:111
+msgid "Find a well lit place(denied)"
+msgstr "Poor light"
 
 #: templates\popups.html:5
 msgid "For the best results"
@@ -119,9 +123,13 @@ msgstr "Incorrect pronunciation"
 msgid "Last one"
 msgstr "Last one"
 
-#: templates\popups.html:107 templates\popups.html:12
+#: templates\popups.html:12
 msgid "Make sure it's quiet"
 msgstr "Make sure it's quiet"
+
+#: templates\popups.html:107
+msgid "Make sure it's quiet(denied)"
+msgstr "Too noisy"
 
 #: templates\verification.html:5
 msgid ""
@@ -187,7 +195,7 @@ msgstr "Registration complete"
 
 #: templates\registration.html:15
 msgid "Selfie: done"
-msgstr "Selfie: done"
+msgstr "Selfie done. Record your voice"
 
 #: templates\registration.html:27 templates\verification.html:13
 msgid "STOP"
@@ -195,7 +203,7 @@ msgstr "STOP"
 
 #: templates\popups.html:47 templates\popups.html:99
 msgid "Take off sunglasses"
-msgstr "Take off sunglasses"
+msgstr "Sunglasses on"
 
 #: templates\popups.html:16
 msgid "Take off sunglasses(agree)"

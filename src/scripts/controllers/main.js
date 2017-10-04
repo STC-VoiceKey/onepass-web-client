@@ -5,7 +5,7 @@ webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$l
 
 		var init = function() {
 
-			$scope.main = {};
+			$scope.main = {"person": localStorageService.get("personId")};
 			$scope.cancel();
 
 		}
@@ -16,24 +16,28 @@ webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$l
 
 		var registrationError = function(){
 			$scope.main.errorExists = true;
+			$rootScope.preloader = false;
 		}
 
 		var addPerson = function(id){
+
 			$rootScope.preloader = true;
 
 			Api.addPerson({
 				"id": id
 			}, function(person) {
 				localStorageService.set("transaction", person.transactionId);
+				localStorageService.set("personId", id);
 				$scope.main.agree = true;
 			}, function(e) {
 				console.log(e);
 			}).$promise.finally(function(){
-				$rootScope.preloader = false;				
+				$rootScope.preloader = false;	
 			});
 		}
 
 		var deletePerson = function(id){
+
 			$rootScope.preloader = true;
 			
 			Api.deletePerson({
@@ -42,9 +46,10 @@ webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$l
 				addPerson(id);
 			}, function(e) {
 				console.log(e);
+				$rootScope.preloader = false;
 			}).$promise.finally(function(){
-				$rootScope.preloader = false;				
-			});;	
+
+			});
 		}
 
 
@@ -52,11 +57,11 @@ webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$l
 			$rootScope.preloader = true;
 
 			Api.checkPerson({
-				"id": person.id
+				"id": person
 			}, function(res) {
 				if (res.isFullEnroll) {
 					$location.path("verification");
-					localStorageService.set("personId", person.id);
+					localStorageService.set("personId", person);
 				} else { 
 					verificationError();
 				}
@@ -71,14 +76,14 @@ webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$l
 			$rootScope.preloader = true;
 
 			Api.checkPerson({
-				"id": person.id
+				"id": person
 			}, function(res) {
-				if (!res.isFullEnroll) deletePerson(person.id);
+				if (!res.isFullEnroll) deletePerson(person);
 					else registrationError();	
 			}, function(e) {
-				addPerson(person.id);
+				addPerson(person);
 			}).$promise.finally(function(){
-				$rootScope.preloader = false;				
+							
 			});
 		}
 
@@ -90,7 +95,7 @@ webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$l
 			$scope.main.agree = false;
 			$scope.main.errorNotFound = null;
 			$scope.main.errorExists = null;
-			localStorageService.remove("transaction", "personId");
+			localStorageService.remove("transaction", "isLogged");
 		}
 
 		$scope.change = function() {

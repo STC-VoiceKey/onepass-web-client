@@ -141,11 +141,11 @@ webaccessApp.controller('RegistrationCtrl', ["$scope", "Api", "storage", "$locat
 		}
 
 		$scope.uploadScreen = function(){
+			
 			$rootScope.preloader = true;
 
-			$scope.media.context.drawImage($scope.media.video, 0, 0, $scope.media.video.width, $scope.media.video.height);
-			var screen = $scope.media.canvas.toDataURL('image/jpeg').replace(/^data:image\/(png|jpeg);base64,/, '');
-			
+			var screen = storage.getScreen();
+
 			Api.face({}, {
 				"data": screen
 			}, function(response) {

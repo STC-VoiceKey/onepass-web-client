@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2017-09-29 15:01+0300\n"
+"PO-Revision-Date: 2017-10-04 15:20+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -91,9 +91,13 @@ msgstr "Выход"
 msgid "Eyes closed"
 msgstr "Закрыты глаза"
 
-#: templates\popups.html:111 templates\popups.html:8
+#: templates\popups.html:8
 msgid "Find a well lit place"
 msgstr "Найдите хорошо освещенное место"
+
+#: templates\popups.html:111
+msgid "Find a well lit place(denied)"
+msgstr "Плохое освещение"
 
 #: templates\popups.html:5
 msgid "For the best results"
@@ -123,9 +127,13 @@ msgstr "Нечеткое произношение"
 msgid "Last one"
 msgstr "Запишите заключительный образец голоса"
 
-#: templates\popups.html:107 templates\popups.html:12
+#: templates\popups.html:12
 msgid "Make sure it's quiet"
 msgstr "Найдите тихое место"
+
+#: templates\popups.html:107
+msgid "Make sure it's quiet(denied)"
+msgstr "Слишком шумно"
 
 #: templates\verification.html:5
 msgid ""
@@ -133,9 +141,9 @@ msgid ""
 "the recording. At the same time pronounce the following digits and press "
 "\"STOP\" button when done"
 msgstr ""
-"Посмотрите в камеру и нажмите кнопку \"REC\". Сохраняя расположение лица "
-"перед камерой, произнесите цифры, которые появятся в рамке и нажмите кнопку  "
-"\"STOP\" по окончании:"
+"Посмотрите в камеру и нажмите кнопку \"СТАРТ\". Сохраняя расположение лица "
+"перед камерой, произнесите цифры, которые появятся в рамке, и нажмите "
+"кнопку  \"СТОП\" по окончании:"
 
 #: templates\registration.html:5
 msgid "Make sure you look directly to the camera and press the button"
@@ -176,7 +184,7 @@ msgstr "Возможные причины:"
 #: templates\registration.html:21
 msgid "Press the REC button and pronounce following digits:"
 msgstr ""
-"Нажмите кнопку \"REC\", произнесите цифры<br>и нажмите кнопку \"STOP\" по "
+"Нажмите кнопку \"СТАРТ\", произнесите цифры<br>и нажмите кнопку \"СТОП\" по "
 "окончании"
 
 #: templates\registration.html:26 templates\verification.html:12
@@ -193,7 +201,7 @@ msgstr "Регистрация успешно завершена"
 
 #: templates\registration.html:15
 msgid "Selfie: done"
-msgstr "Фотография принята: Запишите Ваш голос"
+msgstr "Фотография принята. Запишите Ваш голос"
 
 #: templates\registration.html:27 templates\verification.html:13
 msgid "STOP"
@@ -201,7 +209,7 @@ msgstr "СТОП"
 
 #: templates\popups.html:47 templates\popups.html:99
 msgid "Take off sunglasses"
-msgstr "Одеты темные очки"
+msgstr "Надеты темные очки"
 
 #: templates\popups.html:16
 msgid "Take off sunglasses(agree)"

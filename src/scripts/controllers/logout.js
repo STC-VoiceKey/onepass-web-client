@@ -5,7 +5,7 @@ webaccessApp.controller('LogoutCtrl', ["$scope", 'localStorageService', '$locati
 		
 		var person = localStorageService.get("personId");
 		
-		if(!person) $location.path("/");
+		if( !localStorageService.get("isLogged") ) $location.path("/");
 		
 		$scope.deleteAccount = function() {
 

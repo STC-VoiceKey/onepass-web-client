@@ -53,8 +53,8 @@ body{background: #009aa6 !important;}
 /*popups*/
 
 .preloader{position: fixed;  top: 0;  left: 0;  width: 100%;  height: 100%;  z-index: 999999;}
-.preloader-bg{position: fixed;  top: 0;  left: 0;  width: 100%;  height: 100%;  background: #fff;  z-index: 99992; opacity: 0.7;}
-.preloader-image{ background: url(../images/image__loading.gif) no-repeat;  background-size: 100% 100%;  width: 50px;  height: 50px;  position: absolute;  top: 50%;  left: 50%;  margin: -25px 0 0 -25px;  z-index: 99993;}
+.preloader-bg{position: fixed;  top: 0;  left: 0;  width: 100%;  height: 100%;  background: #009aa6;  z-index: 99992; opacity: 0.8;}
+.preloader-image{/*-webkit-filter: invert(100%); filter: invert(100%); */box-shadow: 200px 220px 305px #fff; border-radius: 50%; background: url(../images/image__loading.gif) no-repeat;  background-size: 100% 100%;  width: 50px;  height: 50px;  position: absolute;  top: 50%;  left: 50%;  margin: -25px 0 0 -25px;  z-index: 99993;}
 
 .b-popup__agree, .b-popup__error{color: #fff;}
 .b-popup__agree-bg, .b-popup__error-bg, .b-popup__access-bg {  position: fixed;  top: 0;  left: 0;  width: 100%;  height: 100%;  background: #009aa6;  z-index: 99992;}
@@ -114,6 +114,9 @@ body{background: #009aa6 !important;}
 .input-error{box-shadow: 0px 0px 20px red;}
 
 .hidden{display: none;}
+.freeze video{display: none;}
+.freeze canvas{transform: scaleX(-1);  -o-transform: scaleX(-1);  -ms-transform: scaleX(-1);  -moz-transform: scaleX(-1);  -webkit-transform: scaleX(-1);}
+
 .b-404{font-size: 30px; padding: 30px; box-sizing: border-box;}
 a, button, input, textarea, select{outline: none;}
 h1{font-size: 23px; font-weight: bold; color: #ffd500;}

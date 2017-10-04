@@ -20,6 +20,7 @@ webaccessApp.controller('VerificationCtrl', ["$scope", "Api", "localStorageServi
 				Api.startVerification({"id": id}, function(verif){
 					
 					$scope.verification.password = verif.password;
+
 					localStorageService.set("transaction", verif.transactionId);
 
 				}, function(e){
@@ -33,17 +34,30 @@ webaccessApp.controller('VerificationCtrl', ["$scope", "Api", "localStorageServi
 		var verificationResult = function(){
 			
 			Api.verificationResult(function(result){
+
 				if(result.status == "SUCCESS"){
+
 					$scope.showPopup('access');	
+					
+					localStorageService.set("isLogged", true);
+					
 					$timeout(profile, 3000);
+
 				} else {
+
 					$scope.showPopup('denied');
 				}
+
 			}, function(e){
+				
 				$scope.showPopup('denied');
+
 			}).$promise.finally(function(){
+				
 				$rootScope.preloader = false;
+
 				localStorageService.remove("transaction");
+
 			});
 		}
 
@@ -82,6 +96,7 @@ webaccessApp.controller('VerificationCtrl', ["$scope", "Api", "localStorageServi
 					
 					if ($scope.verification.recording) {
 						$scope.verification.recording = false;
+						storage.getScreen();
 						encodeBase64(blob, uploadLastRecordingVideo);
 					}
 				};
@@ -115,10 +130,9 @@ webaccessApp.controller('VerificationCtrl', ["$scope", "Api", "localStorageServi
 			}, function(response) {
 				
 			}, function(e) {
-				$scope.showPopup('denied');
+
 			}).$promise.finally(function(){
 				verificationResult();
-				$rootScope.preloader = false;
 			});
 		}
 

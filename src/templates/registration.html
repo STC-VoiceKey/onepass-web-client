@@ -8,7 +8,7 @@
 				<a href="#/" class="b-screen__control-cancel" translate>Cancel</a>
 			</div>
 		</div>
-	    <div class="video-frame"></div>
+	    <div class="video-frame" ng-class="{'freeze': preloader}"></div>
 	</div>
 	<div class="b-audio" ng-class="{'hidden': !registration.audio}">
 		<div class="b-audio__title" ng-if="!registration.complete">

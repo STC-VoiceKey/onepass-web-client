@@ -1,7 +1,7 @@
 'use strict';
 
-webaccessApp.factory('loginService', ['Api', 'localStorageService',
-	function(Api, localStorageService) {
+webaccessApp.factory('loginService', ['Api', 'localStorageService', 'storage',
+	function(Api, localStorageService, storage) {
 
 		var methods = {
 			
@@ -10,6 +10,7 @@ webaccessApp.factory('loginService', ['Api', 'localStorageService',
 					"username": "",
 					"password": "",
 					"domainId": 201
+					}
 					
 				}, function(access) {
 					
@@ -20,6 +21,7 @@ webaccessApp.factory('loginService', ['Api', 'localStorageService',
 					console.log('login failed: ', e);
 				
 				});
+
 			},
 
 			isLogged: function() {

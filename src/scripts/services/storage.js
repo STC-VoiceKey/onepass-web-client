@@ -89,6 +89,11 @@ webaccessApp.factory('storage', [
 
 			getMedia: function() {
 				return media;
+			},
+
+			getScreen: function(){
+				media.context.drawImage(media.video, 0, 0, media.video.width, media.video.height);
+				return media.canvas.toDataURL('image/jpeg').replace(/^data:image\/(png|jpeg);base64,/, '');
 			}
 		}
 

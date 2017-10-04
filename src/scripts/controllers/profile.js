@@ -5,6 +5,6 @@ webaccessApp.controller('ProfileCtrl', ["$scope", "localStorageService", "$locat
 		
 		$scope.username = localStorageService.get("personId");
 		
-		if(!$scope.username) $location.path("/");
+		if( !localStorageService.get("isLogged") ) $location.path("/");
 	}
 ]);

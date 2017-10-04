@@ -60,9 +60,12 @@ msgstr ""
 msgid "Eyes closed"
 msgstr ""
 
-#: templates\popups.html:111
 #: templates\popups.html:8
 msgid "Find a well lit place"
+msgstr ""
+
+#: templates\popups.html:111
+msgid "Find a well lit place(denied)"
 msgstr ""
 
 #: templates\popups.html:5
@@ -89,9 +92,12 @@ msgstr ""
 msgid "Last one"
 msgstr ""
 
-#: templates\popups.html:107
 #: templates\popups.html:12
 msgid "Make sure it's quiet"
+msgstr ""
+
+#: templates\popups.html:107
+msgid "Make sure it's quiet(denied)"
 msgstr ""
 
 #: templates\verification.html:5
