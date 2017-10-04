@@ -38,11 +38,11 @@ var path = {
 
 var testConfig = {
     ghostMode: {
-        clicks: true,
-        forms: true,
-        scroll: true
+        clicks: false,
+        forms: false,
+        scroll: false
     },
-    //logLevel: "debug",
+    logLevel: "info",
     open: false,
     server: {
         baseDir: "./src",
@@ -95,9 +95,9 @@ gulp.task('html', function() {
             browsers: ['last 2 versions'],
             cascade: false
         })))
-        /*.pipe(gulpIf('*.html', htmlmin({
+        .pipe(gulpIf('*.html', htmlmin({
             collapseWhitespace: true
-        })))*/
+        })))
         .pipe(gulp.dest(path.build.html));
 });
 

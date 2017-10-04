@@ -1,0 +1,19 @@
+<div ng-include="'templates/popups.html'"></div>
+<div class="b-verification">
+	<div class="b-screen" ng-class="{'hidden': verification.denied}">
+	    <div class="b-screen__control">
+	    	<div class="b-screen__control-description" translate>
+				Make sure you look directly to the camera and press "REC" button to start the recording. At the same time pronounce the following digits and press "STOP" button when done
+			</div>
+			<div class="b-screen__numbers">
+				<span ng-if="verification.recording">{{ decodePassword(verification.password) }}</span>
+			</div>
+			<div class="b-screen__control-buttons">
+				<button class="button-circle" ng-click="startRecordVideo()" ng-if="!verification.recording" translate>REC</button>
+				<button class="button-circle" ng-click="stopRecordVideo()" ng-if="verification.recording" translate>STOP</button>
+				<a href="#/" class="b-screen__control-cancel" translate>Cancel</a>
+			</div>
+		</div>
+	    <div class="video-frame"></div>
+	</div>
+</div>

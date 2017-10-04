@@ -1,86 +1,32 @@
-<div class="b-registration" ng-class="{'b-registration__error': screenError}">
-	<div class="b-vwrap">
-		<div class="b-popup__error-text" ng-if="screenError">
-			<div class="b-popup__error-bg"></div>
-			<div class="b-popup__error-front">
-				<span class="b-popup__error-title txt_h1--highlighted">Give it another shot</span>
-				<span class="b-popup__error-title txt_h3">Possible reasons:</span>
-				<div class="b-popup__error-item">
-					<span class="b-popup__error-item-icon icon__close_eyes"></span>
-					<span class="b-popup__error-item-text">Eyes closed</span>
-				</div>
-				<div class="b-popup__error-item">
-					<span class="b-popup__error-item-icon icon__many_faces"></span>
-					<span class="b-popup__error-item-text">Other faces detected</span>
-				</div>
-				<div class="b-popup__error-item">
-					<span class="b-popup__error-item-icon icon__sunglasses"></span>
-					<span class="b-popup__error-item-text">Take off sunglasses</span>
-				</div>
-				<div class="b-popup__error-item">
-					<span class="b-popup__error-item-icon icon__poor_quality"></span>
-					<span class="b-popup__error-item-text">Poor image quality</span>
-				</div>
-				<div class="b-popup__error-item">
-					<span class="b-popup__error-item-icon icon__noface"></span>
-					<span class="b-popup__error-item-text">No face detected</span>
-				</div>
-				<div class="b-popup__error-buttons">
-					<button class="b-popup__error-button button" ng-click="retake()" />Retake the photo</button>
-				</div>
+<div ng-include="'templates/popups.html'"></div>
+<div class="b-registration">
+	<div class="b-screen" ng-class="{'hidden': !registration.screen}">
+	    <div class="b-screen__control">
+	    	<div class="b-screen__control-description" translate>Make sure you look directly to the camera and press the button</div>
+			<div class="b-screen__control-buttons">
+				<button class="b-screen__control-button button-circle icon__screen" ng-click="uploadScreen()"></button>
+				<a href="#/" class="b-screen__control-cancel" translate>Cancel</a>
 			</div>
 		</div>
-		<div class="b-video">
-		    <div class="b-video__control" ng-if="!screenError">
-		    	<div class="b-verify__descr">
-					Make sure you look directly to the camera and press the button below when it's active to take a foto.
-				</div>
-				<div class="b-video__control-active">
-					<button class="b-video__control-button" ng-click="uploadScreen()">
-						<span class="b-video__control-screen-icon icon__screen"></span>
-					</button>
-					<a href="" ng-click="regCancel()" class="b-video__control-update link">Cancel</a>
-				</div>
-			</div>
-		    <div class="video__box" ng-class="{'b-blur': screenError}"></div>
-		    <canvas id="canvas" width="640" height="480"></canvas>
-		</div>
-		<div class="logo__onepass-under" ng-if="!screenError"></div>
+	    <div class="video-frame"></div>
 	</div>
-	<div class="b-audio">
-		<div class="b-popup__error-text" ng-if="audioError">
-			<div class="b-popup__error-audio-bg"></div>
-			<div class="b-popup__error-front">
-				<span class="b-popup__error-title txt_h1--highlighted">Give it another recording</span>
-				<div class="b-popup__error-item">
-					<span class="b-popup__error-item-icon icon__mute"></span>
-					<span class="b-popup__error-item-text">Too noisy</span>
-				</div>
-				<div class="b-popup__error-item">
-					<span class="b-popup__error-item-icon icon__poor_quality"></span>
-					<span class="b-popup__error-item-text">Incorrect pronunciation</span>
-				</div>
-				<div class="b-popup__error-buttons">
-					<button class="b-popup__error-button button" ng-click="retake()" />Try again</button>
-				</div>
-			</div>
+	<div class="b-audio" ng-class="{'hidden': !registration.audio}">
+		<div class="b-audio__title" ng-if="!registration.complete">
+			<span ng-if="registration.audioStep == 0" translate>Selfie: done</span>
+			<span ng-if="registration.audioStep == 1" translate>Two to go</span>
+			<span ng-if="registration.audioStep == 2" translate>Last one</span>
 		</div>
-		<div class="b-popup__agree-logo logo__onepass"></div>
-		<div class="b-audio__title txt_h2--highlighted b-step">{{ stepText }}</div>
-		<div class="b-audio__descr">
-			Press the REC button<br>
-			and pronounce following digits:
+		<div class="b-audio__title" ng-if="registration.complete" translate>Registration complete</div>
+		<div class="b-audio__description">
+			<span ng-if="!registration.complete" translate>Press the REC button and pronounce following digits:</span>
+			<span ng-if="registration.complete" translate>All set up and ready to go</span>
 		</div>
-		<div class="b-audio__text txt_h1">{{ stepNumbers }}</div>
-		<a href="" class="b-audio__start" ng-click="startRecordAudio()" ng-if="!arecord">rec</a>
-		<a href="" class="b-audio__stop" ng-click="stopRecordAudio()" ng-if="arecord">stop</a>
-	</div>
-	<div class="b-complete">
-		<div class="b-popup__agree-logo logo__onepass"></div>
-		<div class="b-audio__title txt_h2--highlighted b-step">Registration complete</div>
-		<div class="b-audio__descr">
-			All set up and ready to go
+		<div class="b-audio__numbers" ng-if="!registration.complete">{{ registration.password.numbers }}</div>
+		<div class="b-audio__buttons">
+			<button href="" class="button-circle" ng-click="startRecordAudio()" ng-if="!registration.recording && !registration.complete" translate>REC</button>
+			<button href="" class="button-circle" ng-click="stopRecordAudio()" ng-if="registration.recording  && !registration.complete" translate>STOP</button>
+			<a href="#/" class="b-screen__control-cancel" ng-if="!registration.complete" translate>Cancel</a>
+			<button class="b-audio__button-ok button" ng-click="complete()" ng-if="registration.complete" translate>Done</button>
 		</div>
-		<a href="#/" class="b-complete__button button">done</a>
 	</div>
 </div>

@@ -1,15 +1,10 @@
-'use strict';
+'use strict'
 
-webaccessApp.controller('ProfileCtrl', ['$scope', '$location', 'localStorageService', '$rootScope',
-	function($scope, $location, localStorageService, $rootScope) {
-		var person = localStorageService.get("person");
-		if (person && person.auth) {
-			$rootScope.username = person.personId;
-		} else {
-			$location.url("/");
-			return;
-		}
-
-		console.log("profile");
+webaccessApp.controller('ProfileCtrl', ["$scope", "localStorageService", "$location",
+	function($scope, localStorageService, $location) {
+		
+		$scope.username = localStorageService.get("personId");
+		
+		if(!$scope.username) $location.path("/");
 	}
 ]);

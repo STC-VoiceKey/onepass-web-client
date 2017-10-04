@@ -1,53 +1,58 @@
 <!doctype html>
 <html ng-app="webaccessApp">
   <head>
-    <script type="text/javascript"><!-- 
-        if (screen.width <= 699 || navigator.userAgent.match(/iPad/i) != null) {
-            document.location = "/support/"; 
-        }
-    //--></script>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/webaccess.png?123" type="image/x-icon" />
-    <title>OnePass.Webaccess</title>
+    <link rel="icon" href="images/webaccess.ico?cache=113" type="image/x-icon" />
+    <title>Webaccess</title>
+    
     <!-- build:css styles/main.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbower -->
     <!-- endbuild -->
+
   </head>
   <body>
     <div class="b-wrapper">
-        <div class="e-loading" id="eloading">
-            <div class="e-loading__bg"></div>
-            <div class="e-loading__image"></div>
+        <div header></div>
+        <div class="b-viewport">
+            <div class="preloader" ng-if="preloader">
+                <div class="preloader-bg"></div>
+                <div class="preloader-image"></div>
+            </div>
+            <div ng-view></div>
         </div>
-        <div ng-view></div>
     </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/angular/angular.js"></script>
     <script src="../bower_components/angular-gettext/dist/angular-gettext.js"></script>
-    <script src="../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
     <script src="../bower_components/angular-route/angular-route.js"></script>
     <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <!-- <script src="scripts/bower_components/angular-location-update/angular-location-update.min.js"></script> -->
+    
     <script src="scripts/lib/MediaStreamRecorderModified.js"></script>
-    <script src="scripts/lib/FacetrackingModified.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
     <!-- build:js scripts/main.js -->
+    
     <script src="scripts/init.js"></script>
+    <script src="scripts/derectives/header.js"></script>
     <script src="scripts/services/config.js"></script>
+    <script src="scripts/services/api.js"></script>
+    <script src="scripts/services/loginService.js"></script>
     <script src="scripts/services/storage.js"></script>
-    <script src="scripts/services/mediaservice.js"></script>
+    <script src="scripts/controllers/404.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/access.js"></script>
-    <script src="scripts/controllers/profile.js"></script>
+    <script src="scripts/controllers/verification.js"></script>
     <script src="scripts/controllers/registration.js"></script>
-    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/profile.js"></script>
     <script src="scripts/controllers/logout.js"></script>
-    <script src="scripts/services/popup.js"></script>
+ 
     <!-- endbuild -->
   </body>
 </html>

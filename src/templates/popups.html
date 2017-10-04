@@ -1,0 +1,124 @@
+<div class="b-popup__agree" ng-if="main.agree">
+	<div class="b-popup__agree-bg"></div>
+	<div class="b-popup__agree-text">
+		<span class="b-popup__agree-title" translate>Terms and conditions of use</span>
+		<span class="b-popup__agree-note" translate>For the best results</span>
+		<div class="b-popup__agree-item">
+			<span class="b-popup__agree-item-icon icon__light"></span>
+			<span class="b-popup__agree-item-text" translate>Find a well lit place</span>
+		</div>
+		<div class="b-popup__agree-item">
+			<span class="b-popup__agree-item-icon icon__mute"></span>
+			<span class="b-popup__agree-item-text" translate>Make sure it's quiet</span>
+		</div>
+		<div class="b-popup__agree-item">
+			<span class="b-popup__agree-item-icon icon__sunglasses"></span>
+			<span class="b-popup__agree-item-text" translate>Take off sunglasses(agree)</span>
+		</div>
+		<div class="b-popup__agree-item">
+			<span class="b-popup__agree-item-icon icon__face"></span>
+			<span class="b-popup__agree-item-text" translate>Make your ordinary face</span>
+		</div>
+		<div class="b-popup__agree-accept" translate>
+			I understand that the system will process my biometrical data and agree to take a selfie and record voice samples
+		</div>
+		<div class="b-popup__agree-buttons">
+			<a href="" class="b-popup__agree-cancel" ng-click="cancel()" translate>Disagree</a>
+			<button class="b-popup__agree-button button" ng-click="agreeAccept()" translate>Agree and continue</button>
+		</div>
+	</div>
+</div>
+
+<div class="b-popup__error" ng-if="registration.faceError">
+	<div class="b-popup__error-bg"></div>
+	<div class="b-popup__error-text">
+		<span class="b-popup__error-title" translate>Give it another shot</span>
+		<span class="b-popup__error-note" translate>Possible reasons:</span>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__close_eyes"></span>
+			<span class="b-popup__error-item-text" translate>Eyes closed</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__many_faces"></span>
+			<span class="b-popup__error-item-text" translate>Other faces detected</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__sunglasses"></span>
+			<span class="b-popup__error-item-text" translate>Take off sunglasses</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__poor_quality"></span>
+			<span class="b-popup__error-item-text" translate>Poor image quality</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__noface"></span>
+			<span class="b-popup__error-item-text" translate>No face detected</span>
+		</div>
+		<div class="b-popup__error-buttons">
+			<a href="" class="b-popup__error-cancel" ng-click="cancel('faceError')" translate>Cancel</a>
+			<button class="b-popup__error-button button" ng-click="hidePopup('faceError')" translate>Try again</button>
+		</div>
+	</div>
+</div>
+
+<div class="b-popup__error" ng-if="registration.audioError">
+	<div class="b-popup__error-bg"></div>
+	<div class="b-popup__error-text">
+		<span class="b-popup__error-title" translate>Give it another recording</span>
+		<span class="b-popup__error-note" translate>Possible reasons:</span>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__mute"></span>
+			<span class="b-popup__error-item-text" translate>Too noisy</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__poor_quality"></span>
+			<span class="b-popup__error-item-text" translate>Incorrect pronunciation</span>
+		</div>
+		<div class="b-popup__error-buttons">
+			<a href="" class="b-popup__error-cancel" ng-click="cancel('audioError')" translate>Cancel</a>
+			<button class="b-popup__error-button button" ng-click="hidePopup('audioError')" translate>Try again</button>
+		</div>
+	</div>
+</div>
+
+<div class="b-popup__error denied" ng-if="verification.denied">
+	<div class="b-popup__error-bg"></div>
+	<div class="b-popup__error-image" ng-class="{'denied-en': language == 'en'}"></div>
+	<div class="b-popup__error-text">
+		<span class="b-popup__error-note" translate>Possible reasons:</span>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__close_eyes"></span>
+			<span class="b-popup__error-item-text" translate>Eyes closed</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__many_faces"></span>
+			<span class="b-popup__error-item-text" translate>Other faces detected</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__sunglasses"></span>
+			<span class="b-popup__error-item-text" translate>Take off sunglasses</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__poor_quality"></span>
+			<span class="b-popup__error-item-text" translate>Poor video quality</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__mute"></span>
+			<span class="b-popup__error-item-text" translate translate>Make sure it's quiet</span>
+		</div>
+		<div class="b-popup__error-item">
+			<span class="b-popup__error-item-icon icon__light"></span>
+			<span class="b-popup__error-item-text" translate>Find a well lit place</span>
+		</div>
+		<div class="b-popup__error-buttons">
+			<a href="" class="b-popup__error-cancel" ng-click="cancel('denied')" translate>Cancel</a>
+			<button class="b-popup__error-button button" ng-click="hidePopup('denied')" translate>Try again</button>
+		</div>
+	</div>
+</div>
+<div class="b-popup__access" ng-if="verification.access">
+	<div class="b-popup__access-bg"></div>
+	<div class="b-popup__access-image" ng-class="{'access-en': language == 'en'}"></div>
+</div>
+
+		

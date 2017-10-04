@@ -1,16 +1,29 @@
 'use strict';
 
-webaccessApp.factory('config', ['gettextCatalog',
-	function(gettextCatalog) {
+webaccessApp.factory('config', ['gettextCatalog', 'localStorageService', '$rootScope',
+	function(gettextCatalog, localStorageService, $rootScope) {
+		
+		var language = localStorageService.get("language");
+		
+		var set_lang = function(lang){
+			gettextCatalog.loadRemote('translations/' + lang + '.json');
+			gettextCatalog.setCurrentLanguage(lang);
+			$rootScope.language = lang;
+		}
 
 		return {
 
-			setLanguage: function(lang) {
-				gettextCatalog.loadRemote('translations/' + lang + '.json');
-				gettextCatalog.setCurrentLanguage(lang);
+			language: function(lang) {
+				localStorageService.set("language", lang);
+				set_lang(lang)
 			},
 
-			getLanguage: function() {
+			languageDefault: function(lang){
+				var val = language || lang;
+				set_lang(val);
+			}, 
+
+			getLanguage: function(){
 				return gettextCatalog.getCurrentLanguage();
 			}
 		}

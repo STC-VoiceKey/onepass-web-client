@@ -2,101 +2,1055 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-06-27 13:08+0300\n"
+"PO-Revision-Date: 2017-09-29 15:01+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#~ msgid "Account"
-#~ msgstr "Аккаунт"
+#: templates\main.html:4
+msgid ""
+"<p>This is the demo-example that introduces the technology of the bimodal "
+"biometric authentication by face and voice and represents OnePass cloud "
+"service provided by the STC-innovation Ltd. The technology proposed can be "
+"used in different cases as the alternative or as the additional factor of "
+"authentication to the system.</p><p>In this demo it’s possible to create "
+"your own biometrical password and go through the verification.</p><p>First "
+"you need to create your biometric profile. So, go to the Registration.</"
+"p><p>Put your e-mail address and make a photo via your web-cam.</p><p>After "
+"that pronounce the digits on your screen: one point after another, three "
+"times.</p><p>When done you can try to authenticate to the system via going "
+"through the biometrical verification.</p><p>Go to the LogIn, put your e-mail "
+"and pronounce the digits of your screen while looking to your web-cam.</p>"
+msgstr ""
+"<p>Данное тестовое демо-приложение демонстрирует возможности технологии "
+"бимодальной биометрической аутентификации по лицу и голосу и представляет "
+"собой облачный сервис OnePass, разработанный компанией ООО «ЦРТ-инновации».</"
+"p><p>Предлагаемая технология  имеет потенциальное применение в различных "
+"областях в качестве альтернативного или дополнительного фактора "
+"аутентификации в любой системе или приложении.</p><p>В демо-приложении Вы "
+"можете создать свой биометрический пароль и пройти с его помощью "
+"аутентификацию.</p><p>В первую очередь, в системе необходимо создать "
+"биометрический профиль. </p><p>Для этого требуется пройти Регистрацию.</"
+"p><p>Во время регистрации укажите адрес электронной почты, который будет "
+"использоваться как логин в системе. </p><p>Далее сделайте фотографию при "
+"помощи веб-камеры и произнесите цифры, которые будут показаны на экране. </"
+"p><p>Всего будет показано 3 набора цифр.</p><p>После регистрации попробуйте "
+"пройти аутентификацию в системе. </p><p>Для этого укажите свой логин и "
+"произнесите несколько цифр, смотря прямо в веб-камеру.</p>"
 
-#~ msgid "Account Available"
-#~ msgstr "Доступные средства"
+#: templates\main.html:6
+msgid "Account exists"
+msgstr "Пользователь уже существует"
 
-#~ msgid "Account Name"
-#~ msgstr "Тип аккаунта"
+#: templates\main.html:7
+msgid "Account not found"
+msgstr "Пользователь не найден"
 
-#~ msgid "Accounts"
-#~ msgstr "Аккаунты"
+#: templates\popups.html:27
+msgid "Agree and continue"
+msgstr "Согласиться и продолжить"
 
-#~ msgid "Cards"
-#~ msgstr "Карты"
+#: templates\registration.html:22
+msgid "All set up and ready to go"
+msgstr "Все готово для продолжения работы"
 
-#~ msgid "Credits"
-#~ msgstr "Кредит"
+#: templates\popups.html:114 templates\popups.html:58 templates\popups.html:78
+#: templates\registration.html:28 templates\registration.html:8
+#: templates\verification.html:14
+msgid "Cancel"
+msgstr "Отменить"
 
-#~ msgid "Currency"
-#~ msgstr "Валюта"
+#: templates\logout.html:3
+msgid "Delete account"
+msgstr "Удалить аккаунт"
 
-#~ msgid "Current Balance"
-#~ msgstr "Текущий баланс"
+#: templates\popups.html:26
+msgid "Disagree"
+msgstr "Не соглашаюсь"
+
+#: templates\registration.html:29
+msgid "Done"
+msgstr "Готово"
+
+#: templates\main.html:8 templates\translated.html:1
+msgid "Email"
+msgstr "Электронная почта"
+
+#: templates\logout.html:2 templates\profile.html:4
+msgid "Exit"
+msgstr "Выход"
+
+#: templates\popups.html:39 templates\popups.html:91
+msgid "Eyes closed"
+msgstr "Закрыты глаза"
+
+#: templates\popups.html:111 templates\popups.html:8
+msgid "Find a well lit place"
+msgstr "Найдите хорошо освещенное место"
+
+#: templates\popups.html:5
+msgid "For the best results"
+msgstr "Рекомендации для успешного прохождения регистрации:"
+
+#: templates\popups.html:67
+msgid "Give it another recording"
+msgstr "Попробуйте записать голос еще раз"
+
+#: templates\popups.html:35
+msgid "Give it another shot"
+msgstr "Попробуйте сделать фотографию еще раз"
+
+#: templates\popups.html:22
+msgid ""
+"I understand that the system will process my biometrical data and agree to "
+"take a selfie and record voice samples"
+msgstr ""
+"Я понимаю, что будет производиться обработка моих биометрических данных, и "
+"соглашаюсь сделать фотографию и записать образцы моего голоса"
+
+#: templates\popups.html:75
+msgid "Incorrect pronunciation"
+msgstr "Нечеткое произношение"
+
+#: templates\registration.html:17
+msgid "Last one"
+msgstr "Запишите заключительный образец голоса"
+
+#: templates\popups.html:107 templates\popups.html:12
+msgid "Make sure it's quiet"
+msgstr "Найдите тихое место"
+
+#: templates\verification.html:5
+msgid ""
+"Make sure you look directly to the camera and press \"REC\" button to start "
+"the recording. At the same time pronounce the following digits and press "
+"\"STOP\" button when done"
+msgstr ""
+"Посмотрите в камеру и нажмите кнопку \"REC\". Сохраняя расположение лица "
+"перед камерой, произнесите цифры, которые появятся в рамке и нажмите кнопку  "
+"\"STOP\" по окончании:"
+
+#: templates\registration.html:5
+msgid "Make sure you look directly to the camera and press the button"
+msgstr "Посмотрите в камеру и нажмите на кнопку"
+
+#: templates\popups.html:20
+msgid "Make your ordinary face"
+msgstr "Сделайте нейтральное выражение лица"
+
+#: templates\popups.html:55
+msgid "No face detected"
+msgstr "На фотографии отсутствует лицо"
+
+#: templates\main.html:3
+msgid "OnePass Demo"
+msgstr "OnePass Демо"
+
+#: templates\popups.html:43 templates\popups.html:95
+msgid "Other faces detected"
+msgstr "На фотографии несколько лиц"
+
+#: templates\404.html:1
+msgid "Page not found (404)"
+msgstr "Страница не найдена (404)"
+
+#: templates\popups.html:51
+msgid "Poor image quality"
+msgstr "Низкое качество изображения"
+
+#: templates\popups.html:103
+msgid "Poor video quality"
+msgstr "Низкое качество видео"
+
+#: templates\popups.html:36 templates\popups.html:68 templates\popups.html:88
+msgid "Possible reasons:"
+msgstr "Возможные причины:"
+
+#: templates\registration.html:21
+msgid "Press the REC button and pronounce following digits:"
+msgstr ""
+"Нажмите кнопку \"REC\", произнесите цифры<br>и нажмите кнопку \"STOP\" по "
+"окончании"
+
+#: templates\registration.html:26 templates\verification.html:12
+msgid "REC"
+msgstr "СТАРТ"
+
+#: templates\main.html:10
+msgid "Registration"
+msgstr "Регистрация"
+
+#: templates\registration.html:19
+msgid "Registration complete"
+msgstr "Регистрация успешно завершена"
+
+#: templates\registration.html:15
+msgid "Selfie: done"
+msgstr "Фотография принята: Запишите Ваш голос"
+
+#: templates\registration.html:27 templates\verification.html:13
+msgid "STOP"
+msgstr "СТОП"
+
+#: templates\popups.html:47 templates\popups.html:99
+msgid "Take off sunglasses"
+msgstr "Одеты темные очки"
+
+#: templates\popups.html:16
+msgid "Take off sunglasses(agree)"
+msgstr "Снимите темные очки"
+
+#: templates\popups.html:4
+msgid "Terms and conditions of use"
+msgstr "Правила и порядок использования"
+
+#: templates\popups.html:71
+msgid "Too noisy"
+msgstr "Слишком шумно"
+
+#: templates\popups.html:115 templates\popups.html:59 templates\popups.html:79
+msgid "Try again"
+msgstr "Повторить попытку"
+
+#: templates\registration.html:16
+msgid "Two to go"
+msgstr "Запишите второй образец голоса"
+
+#: templates\main.html:9
+msgid "Verification"
+msgstr "Верификация"
+
+#~ msgid "&copy; 2017 Reporter. All rights reserved"
+#~ msgstr "&copy; 2017 Reporter. Все права защищены"
+
+#~ msgid "Action"
+#~ msgstr "Действия"
+
+#~ msgid "Add fields"
+#~ msgstr "Добавить поля"
+
+#~ msgid "All schedulers for template"
+#~ msgstr "Все расписания для шаблона:"
+
+#~ msgid "Amount of days"
+#~ msgstr "Кол-во дней"
+
+#~ msgid "Choose date range"
+#~ msgstr "Созданные отчеты за период"
+
+#~ msgid "Choose domain"
+#~ msgstr "Выбрать домен"
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
+
+#~ msgid "Column name"
+#~ msgstr "Имя колонки"
+
+#~ msgid "Column name db"
+#~ msgstr "Имя колонки в базе данных"
+
+#~ msgid "Create"
+#~ msgstr "Создать"
+
+#~ msgid "CUSTOM"
+#~ msgstr "ДРУГОЕ"
 
 #~ msgid "Date"
 #~ msgstr "Дата"
 
-#~ msgid "Description"
-#~ msgstr "Описание"
+#~ msgid "DAY"
+#~ msgstr "ДЕНЬ"
 
-#~ msgid "Edit profile"
-#~ msgstr "Редактировать профиль"
+#~ msgid "Delete"
+#~ msgstr "Удалить"
+
+#~ msgid "Delete after days"
+#~ msgstr "Кол-во дней до удаления"
+
+#~ msgid "Directory name"
+#~ msgstr "Имя директории"
+
+#~ msgid "Edit"
+#~ msgstr "Редактировать"
+
+#~ msgid "Edit scheduler"
+#~ msgstr "Редактировать расписание"
+
+#~ msgid "Export to"
+#~ msgstr "Экспортировать в "
+
+#~ msgid "Extantion files"
+#~ msgstr "Расширение файлов"
+
+#~ msgid "First generation"
+#~ msgstr "Дата первого создания"
+
+#~ msgid "INVALID"
+#~ msgstr "НЕДЕЙСТВИТЕЛЬНЫЙ"
+
+#~ msgid "Last date"
+#~ msgstr "Дата последнего создания"
+
+#~ msgid "Loading..."
+#~ msgstr "Загрузка..."
+
+#~ msgid "Log in"
+#~ msgstr "Авторизуйтесь"
 
 #~ msgid "login"
 #~ msgstr "Вход"
 
+#~ msgid "Login"
+#~ msgstr "Логин"
+
 #~ msgid "login button"
-#~ msgstr "вход"
+#~ msgstr "Войти"
 
-#~ msgid "Main"
-#~ msgstr "Главная"
+#~ msgid "MONTH"
+#~ msgstr "МЕСЯЦ"
 
-#~ msgid "More"
-#~ msgstr "Прочее"
+#~ msgid "Multiple value"
+#~ msgstr "Несколько значений"
 
-#~ msgid "Payments"
-#~ msgstr "Платежи"
+#~ msgid "Name"
+#~ msgstr "Имя"
 
-#~ msgid "registration"
-#~ msgstr "регистрация"
+#~ msgid "NEW"
+#~ msgstr "НОВЫЙ"
 
-#~ msgid "STC-Bank"
-#~ msgstr "ЦРТ-Банк"
+#~ msgid "New report"
+#~ msgstr "Создать отчет"
 
-#~ msgid "Transaction"
-#~ msgstr "Транзакции"
+#~ msgid "New scheduler"
+#~ msgstr "Создать расписание"
+
+#~ msgid "New template"
+#~ msgstr "Создать шаблон"
+
+#~ msgid "Next date"
+#~ msgstr "Дата следующего создания"
+
+#~ msgid "No schedulers"
+#~ msgstr "Нет расписаний"
+
+#~ msgid "None"
+#~ msgstr "Отсутствует"
+
+#~ msgid "not found"
+#~ msgstr "Пользователь не найден"
+
+#~ msgid "Param name"
+#~ msgstr "Имя параметра"
+
+#~ msgid "Params"
+#~ msgstr "Параметры"
+
+#~ msgid "Password"
+#~ msgstr "Пароль"
+
+#~ msgid "Pause"
+#~ msgstr "Пауза"
+
+#~ msgid "PAUSED"
+#~ msgstr "ОСТАНОВЛЕН"
+
+#~ msgid "Period"
+#~ msgstr "Период"
+
+#~ msgid "QUARTER"
+#~ msgstr "КВАРТАЛ"
+
+#~ msgid "Reports"
+#~ msgstr "Отчеты"
+
+#~ msgid "Request complete"
+#~ msgstr "Выполнено"
+
+#~ msgid "request error"
+#~ msgstr "Ошибка запроса"
+
+#~ msgid "Request error, please check correctness"
+#~ msgstr "Неправильно заполнены поля, проверьте корректность введенных данных"
+
+#~ msgid "Required value"
+#~ msgstr "Обязательное значение"
+
+#~ msgid "Result"
+#~ msgstr "Результат"
+
+#~ msgid "RUNNING"
+#~ msgstr "ЗАПУЩЕН"
+
+#~ msgid "Save"
+#~ msgstr "Сохранить"
+
+#~ msgid "Scheduler"
+#~ msgstr "Расписание"
+
+#~ msgid "Search by reports"
+#~ msgstr "Поиск по отчетам"
+
+#~ msgid "Search by templates"
+#~ msgstr "Поиск по шаблонам"
+
+#~ msgid "Shedulers is invalid:"
+#~ msgstr "Шаблон был изменен, исправьте следующие расписания:"
+
+#~ msgid "Sort:"
+#~ msgstr "Сортировка:"
+
+#~ msgid "Sql"
+#~ msgstr "SQL - запрос"
+
+#~ msgid "sql-param"
+#~ msgstr "Параметр в sql-запросе"
+
+#~ msgid "Start"
+#~ msgstr "Старт"
+
+#~ msgid "State"
+#~ msgstr "Статус"
+
+#~ msgid "Tag"
+#~ msgstr "Тег"
+
+#~ msgid "Tag unavailable"
+#~ msgstr "Тег недоступен"
+
+#~ msgid "Template"
+#~ msgstr "Шаблон"
+
+#~ msgid "Templates"
+#~ msgstr "Шаблоны"
+
+#~ msgid "The name of the directory on the server"
+#~ msgstr "Имя директории на сервере"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgid "unauthorized"
+#~ msgstr "Неправильный пароль"
+
+#~ msgid "Value"
+#~ msgstr "Значение"
+
+#~ msgid "WEEK"
+#~ msgstr "НЕДЕЛЯ"
+
+#~ msgid "YEAR"
+#~ msgstr "ГОД"
+
+#~ msgid "You are not logged in the system"
+#~ msgstr "Вы не авторизованы в системе"
+
+#~ msgid "You do not have permission to perform this operation"
+#~ msgstr "У Вас нет прав на выполнение данной операции"
+
+#~ msgid "Export to CSV"
+#~ msgstr "Экспортировать в CSV"
+
+#~ msgid "File name"
+#~ msgstr "Имя файла"
+
+#~ msgid "LAST_DAY_OF_MONTH"
+#~ msgstr "ПОСЛЕДНИЙ ДЕНЬ МЕСЯЦА"
+
+#~ msgid "Server report file"
+#~ msgstr "Имя файла на сервере"
+
+#~ msgid "Replace"
+#~ msgstr "Редактировать"
+
+#~ msgid "&copy; 2016 CRT-ARM. All rights reserved"
+#~ msgstr "&copy; 2016-2017 ЦРТ - LdapSecurity. Все права защищены."
+
+#~ msgid "Active sessions"
+#~ msgstr "Активные сессии"
+
+#~ msgid "candidateDuration"
+#~ msgstr "кол-во чистой речи для сравнения"
+
+#~ msgid "close"
+#~ msgstr "закрыть"
+
+#~ msgid "File name for pattern"
+#~ msgstr "Имя файла для проверки"
+
+#~ msgid "file1"
+#~ msgstr "файл"
+
+#~ msgid "file2"
+#~ msgstr "файла"
+
+#~ msgid "file3"
+#~ msgstr "файлов"
+
+#~ msgid "Folder name"
+#~ msgstr "Имя папки"
+
+#~ msgid "Groups of privileges"
+#~ msgstr "Группы привилегий"
+
+#~ msgid "Groups persons"
+#~ msgstr "Группы персон"
+
+#~ msgid "Organisation unit"
+#~ msgstr "Организационный юнит"
+
+#~ msgid "Query of roles"
+#~ msgstr "Запрос поиска ролей"
+
+#~ msgid "referenceDuration"
+#~ msgstr "кол-во чистой речи эталона"
+
+#~ msgid "roles"
+#~ msgstr "Роли"
+
+#~ msgid "Roles"
+#~ msgstr "Роли"
+
+#~ msgid "sessions"
+#~ msgstr "Активные сессии"
+
+#~ msgid "structure"
+#~ msgstr "Структура прав"
+
+#~ msgid "Structure of rights"
+#~ msgstr "Структура прав"
+
+#~ msgid "Synchronization result"
+#~ msgstr "Результат синхронизации"
+
+#~ msgid "Synchronize structure"
+#~ msgstr "Синхронизировать структуру"
+
+#~ msgid "System groups"
+#~ msgstr "Системные группы"
+
+#~ msgid "Task name"
+#~ msgstr "Имя задания"
+
+#~ msgid "Update"
+#~ msgstr "Обновить"
+
+#~ msgid "Update roles cache"
+#~ msgstr "Обновить кэш ролей"
+
+#~ msgid "Update users cache"
+#~ msgstr "Обновить кэш пользователей"
+
+#~ msgid "users"
+#~ msgstr "Пользователи"
+
+#~ msgid "Users"
+#~ msgstr "Пользователи"
+
+#~ msgid "+ select folders"
+#~ msgstr "+ выбрать папки"
+
+#~ msgid "add"
+#~ msgstr "добавить"
+
+#~ msgid "add folder"
+#~ msgstr "Добавить папку"
+
+#~ msgid "Add persons"
+#~ msgstr "Добавить файлы"
+
+#~ msgid "add task"
+#~ msgstr "Добавить задание"
+
+#~ msgid "Calibration"
+#~ msgstr "Калибровка"
+
+#~ msgid "cancel"
+#~ msgstr "Отмена"
+
+#~ msgid "Check pattern"
+#~ msgstr "Проверить шаблон"
+
+#~ msgid "Choose files"
+#~ msgstr "Выбрать файлы"
+
+#~ msgid "Components"
+#~ msgstr "Компоненты"
+
+#~ msgid "delete"
+#~ msgstr "Удалить"
+
+#~ msgid "Delete is not possible, the folder is used"
+#~ msgstr "Удаление невозможно, папка используется"
+
+#~ msgid "Folders"
+#~ msgstr "Папки"
+
+#~ msgid "Global settings"
+#~ msgstr "Глобальные настройки"
+
+#~ msgid "refresh"
+#~ msgstr "Обновить"
+
+#~ msgid "Remove folder"
+#~ msgstr "Удалить папку"
+
+#~ msgid "Remove folder?"
+#~ msgstr "Удалить папку?"
+
+#~ msgid "Remove person?"
+#~ msgstr "Удалить файл?"
+
+#~ msgid "Remove task"
+#~ msgstr "Удалить задание"
+
+#~ msgid "Remove task?"
+#~ msgstr "Удалить задание?"
+
+#~ msgid "Save changes"
+#~ msgstr "Сохранить изменения"
+
+#~ msgid "Search"
+#~ msgstr "Поиск компонента"
+
+#~ msgid "Server"
+#~ msgstr "Сервер"
+
+#~ msgid "Servers"
+#~ msgstr "Серверы"
+
+#~ msgid "Settings"
+#~ msgstr "Настройки"
+
+#~ msgid "settings version"
+#~ msgstr "версия настроек"
+
+#~ msgid "status"
+#~ msgstr "Cтатус"
+
+#~ msgid "Tasks"
+#~ msgstr "Задания"
+
+#~ msgid "Threshold"
+#~ msgstr "Порог"
+
+#~ msgid "validate"
+#~ msgstr "Проверить"
+
+#~ msgid "Add to black list"
+#~ msgstr "Добавить в черный список"
+
+#~ msgid "Add to cluster"
+#~ msgstr "Добавить в кластер"
+
+#~ msgid "BLACK_LISTED"
+#~ msgstr "Добавлена в черный список"
+
+#~ msgid "Cancel action"
+#~ msgstr "Отменить"
+
+#~ msgid "CLUSTERED"
+#~ msgstr "Добавлен в кластер"
+
+#~ msgid "Default"
+#~ msgstr "Основная проверка"
+
+#~ msgid "Error"
+#~ msgstr "Ошибка"
+
+#~ msgid "history"
+#~ msgstr "История"
+
+#~ msgid "history inspections"
+#~ msgstr "История проверок"
+
+#~ msgid "inspections1"
+#~ msgstr "проверка"
+
+#~ msgid "inspections2"
+#~ msgstr "проверки"
+
+#~ msgid "inspections3"
+#~ msgstr "проверок"
+
+#~ msgid "New name"
+#~ msgstr "Новое имя"
+
+#~ msgid "Not fraud"
+#~ msgstr "Не мошенник"
+
+#~ msgid "OK"
+#~ msgstr "Обработан"
+
+#~ msgid "settings"
+#~ msgstr "Настройки"
+
+#~ msgid "Settings not saved"
+#~ msgstr "Все изменения будут потеряны. "
+
+#~ msgid "{{event.count}} events"
+#~ msgstr "{{event.count}} событий"
+
+#~ msgid "Add"
+#~ msgstr "Добавить"
+
+#~ msgid "Add list"
+#~ msgstr "Добавить список"
+
+#~ msgid "all events for period"
+#~ msgstr "Все события за период"
+
+#~ msgid "Amount"
+#~ msgstr "Состав"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "black list"
+#~ msgstr "Черный список"
+
+#~ msgid "Black list \"{{list.name}}\""
+#~ msgstr "Черный список \"{{list.name}}\""
+
+#~ msgid "Black list delete"
+#~ msgstr "Черный список будет удален!"
+
+#~ msgid "Black list name"
+#~ msgstr "Название списка"
+
+#~ msgid "Black lists"
+#~ msgstr "Черные списки"
+
+#~ msgid "Cancel impossible"
+#~ msgstr "Отмена для данной фонограммы уже невозможна, обновите событие"
+
+#~ msgid "Chars left: {{50 - blacklist_name.length}}"
+#~ msgstr "Осталось символов: {{50 - blacklist_name.length}}"
+
+#~ msgid "Chars left: {{50 - list.rename.length}}"
+#~ msgstr "Осталось символов: {{50 - list.rename.length}}"
+
+#~ msgid "Chars left: {{50 - tracks.new_cluster_name.length}}"
+#~ msgstr "Осталось символов: {{50 - tracks.new_cluster_name.length}}"
+
+#~ msgid "Chars left: {{50 - tracks.rename_list.length}}"
+#~ msgstr "Осталось символов: {{50 - tracks.rename_list.length}}"
+
+#~ msgid "Choose blacklist"
+#~ msgstr "Выберите ЧС, в который следует добавить фонограмму"
+
+#~ msgid "Cluster {{tracks.event.type}} \"{{tracks.cluster.name}}\""
+#~ msgstr "Кластер {{tracks.event.type}} \"{{tracks.cluster.name}}\""
+
+#~ msgid "cluster id"
+#~ msgstr "кластер ID"
+
+#~ msgid "cluster vc"
+#~ msgstr "кластер VC"
+
+#~ msgid "Clusters ID"
+#~ msgstr "Кластеры по ID"
+
+#~ msgid "Clusters VC"
+#~ msgstr "Кластеры по голосу"
+
+#~ msgid "Control clusters"
+#~ msgstr "Управление кластерами"
+
+#~ msgid "control panel"
+#~ msgstr "Панель управления"
+
+#~ msgid "Create new cluster"
+#~ msgstr "Сформировать новый кластер"
+
+#~ msgid "Daily:"
+#~ msgstr "Запускать ежедневно:"
+
+#~ msgid "Date creation"
+#~ msgstr "Дата создания"
+
+#~ msgid "Delete list"
+#~ msgstr "Удалить список"
+
+#~ msgid "Edit list"
+#~ msgstr "Редактировать список"
+
+#~ msgid "Enter new name for black list"
+#~ msgstr "Введите имя черного списка"
+
+#~ msgid "Enter new name for cluster"
+#~ msgstr "Введите имя кластера"
+
+#~ msgid "Enter new name for list"
+#~ msgstr "Введите имя списка"
+
+#~ msgid "Enter new name for track"
+#~ msgstr "Введите имя фонограммы"
+
+#~ msgid "Enter title new cluster"
+#~ msgstr "Введите название нового кластера"
+
+#~ msgid "events"
+#~ msgstr "всего"
+
+#~ msgid "Events"
+#~ msgstr "События"
+
+#~ msgid "Fraud events"
+#~ msgstr "Подозрительные события"
+
+#~ msgid "Fraud tracks"
+#~ msgstr "Подозрительные фонограммы"
+
+#~ msgid "Frauds"
+#~ msgstr "Мошенники"
+
+#~ msgid "frauds for period"
+#~ msgstr "Мошенников за период"
+
+#~ msgid "Group ID: {{list.tracks.group_id}}"
+#~ msgstr "Group ID: {{list.tracks.group_id}}"
+
+#~ msgid "Import black list"
+#~ msgstr "Импорт черного списка"
+
+#~ msgid "Include"
+#~ msgstr "Включить в проверку"
+
+#~ msgid "inspect BL"
+#~ msgstr "Сверка с ЧС"
+
+#~ msgid "inspect ID"
+#~ msgstr "Кластер по ID"
+
+#~ msgid "inspect VC"
+#~ msgstr "Кластер по голосу"
+
+#~ msgid "inspected type"
+#~ msgstr "Тип проводимых проверок"
+
+#~ msgid ""
+#~ "Inspection for {{inspections.events.date.day}}.{{inspections.events.date."
+#~ "month}}.{{inspections.events.date.year}}"
+#~ msgstr ""
+#~ "Проверка за {{inspections.events.date.day}}.{{inspections.events.date."
+#~ "month}}.{{inspections.events.date.year}}"
+
+#~ msgid "Inspections period"
+#~ msgstr "Период истории проверок"
+
+#~ msgid "Intro text"
+#~ msgstr "Для начала работы выберите событие в левой части экрана"
+
+#~ msgid "is csv"
+#~ msgstr ""
+#~ "В каталоге <b>\"{{browse.children[browse.selected].name}}\"</b> "
+#~ "обнаружен .csv файл. Для загрузки канал будет выбран автоматически."
+
+#~ msgid "Launch now"
+#~ msgstr "Запустить сейчас"
+
+#~ msgid "Launched"
+#~ msgstr "Запущено"
+
+#~ msgid "Left"
+#~ msgstr "Левый"
+
+#~ msgid "Name BL"
+#~ msgstr "Название ЧС"
+
+#~ msgid "Name cluster"
+#~ msgstr "Название кластера"
+
+#~ msgid "New cluster"
+#~ msgstr "Новый кластер"
+
+#~ msgid "no csv"
+#~ msgstr ""
+#~ "В каталоге <b>\"{{browse.children[browse.selected].name}}\"</b> "
+#~ "отсутвует .csv файл. Прослушайте фонограммы из каталога и выберите, какой "
+#~ "канал использовать для загрузки."
+
+#~ msgid "Remove"
+#~ msgstr "Удалить из списка"
+
+#~ msgid "Rename"
+#~ msgstr "Переименовать"
+
+#~ msgid "Right"
+#~ msgstr "Правый"
+
+#~ msgid "save"
+#~ msgstr "Сохранить изменения"
+
+#~ msgid "saved"
+#~ msgstr "Изменения сохранены"
+
+#~ msgid "Select all"
+#~ msgstr "Выделить все"
+
+#~ msgid "StartTime:"
+#~ msgstr "Время запуска:"
+
+#~ msgid "Time"
+#~ msgstr "Время"
+
+#~ msgid "Title"
+#~ msgstr "Название"
+
+#~ msgid "Track delete"
+#~ msgstr "Фонограмма будет удалена!"
+
+#~ msgid "Track deleted"
+#~ msgstr "Фонограмма удалена. Прослушивание недоступно"
+
+#~ msgid "Track duration"
+#~ msgstr "Длина записи"
+
+#~ msgid "Track to black list"
+#~ msgstr "Добавить в черный список"
+
+#~ msgid "Tracks amount: {{list.tracks.calls.length}}"
+#~ msgstr "Всего фонограмм: {{list.tracks.calls.length}}"
+
+#~ msgid "Tracks amount: {{tracks.new_cluster_checked_results.length}}"
+#~ msgstr "Кол-во фонограмм: {{tracks.new_cluster_checked_results.length}}"
+
+#~ msgid "Tracks included in the cluster"
+#~ msgstr "Фонограммы, включенные в кластер"
+
+#~ msgid "Tracks is not selected"
+#~ msgstr "Для создания нового кластера требуется минимум 2 фонограммы"
+
+#~ msgid "Inspections amount: {{day.launches.length}}"
+#~ msgstr "проверок: {{day.launches.length}}"
+
+#~ msgid "{{day.launches.length}} inspections"
+#~ msgstr "{{day.launches.length}} проверок"
+
+#~ msgid ""
+#~ "Inspections for {{inspections.events.date.day}}.{{inspections.events.date."
+#~ "month}}.{{inspections.events.date.year}}"
+#~ msgstr ""
+#~ "История проверок за {{inspections.events.date.day}}.{{inspections.events."
+#~ "date.month}}.{{inspections.events.date.year}}"
+
+#~ msgid "history inspection"
+#~ msgstr "История проверок"
+
+#~ msgid "Are you sure?"
+#~ msgstr "Все изменения будут потеряны. Уйти со страницы?"
+
+#~ msgid "ID: {{list.tracks.id}}"
+#~ msgstr "ID: {{list.tracks.id}}"
+
+#~ msgid ""
+#~ "Tracks amount: {{list.tracks.calls.length}}&nbsp;&nbsp;&nbsp;ID: {{list."
+#~ "tracks.id}}"
+#~ msgstr ""
+#~ "Всего фонограмм: {{list.tracks.calls.length}}&nbsp;&nbsp;&nbsp;ID: {{list."
+#~ "tracks.id}}"
+
+#~ msgid "all events<br> for period"
+#~ msgstr "Все события<br> за период"
+
+#~ msgid "frauds <br>for period"
+#~ msgstr "Мошенников <br>за период"
+
+#~ msgid "Black list {{list.tracks.name}} delete"
+#~ msgstr "Черный список {{list.tracks.name}} delete"
+
+#~ msgid "Track {{list.track_name}} delete"
+#~ msgstr "Фонограмма {{list.track_name}} будет удален"
+
+#~ msgid ""
+#~ "Всего фонограмм: {{list.tracks.calls.length}}&nbsp;&nbsp;&nbsp;ID: {{list."
+#~ "tracks.id}}"
+#~ msgstr ""
+#~ "Всего фонограмм: {{list.tracks.calls.length}}&nbsp;&nbsp;&nbsp;ID: {{list."
+#~ "tracks.id}}"
+
+#~ msgid "Chars left: {{50 - browse.blacklist_name.length}}"
+#~ msgstr "Осталось символов: {{50 - browse.blacklist_name.length}}"
+
+#~ msgid "bl"
+#~ msgstr "Черный список"
+
+#~ msgid "id"
+#~ msgstr "Кластер ID"
+
+#~ msgid "vc"
+#~ msgstr "Кластер VC"
+
+#~ msgid "New tracks"
+#~ msgstr "Новые фонограммы"
+
+#~ msgid "Chars left: {{50 - tracks.rename_cluster.length}}"
+#~ msgstr "Осталось символов: {{50 - tracks.rename_cluster.length}}"
+
+#~ msgid "Cluster VC \"{{tracks.cluster.name}}\""
+#~ msgstr "Кластер VC \"{{tracks.cluster.name}}\""
+
+#~ msgid "Cluster \"{{tracks.cluster.name}}\""
+#~ msgstr "Кластер \"{{tracks.cluster.name}}\""
+
+#~ msgid "is processing..."
+#~ msgstr "задание уже запущено..."
+
+#~ msgid "Launches"
+#~ msgstr "Запуски"
+
+#~ msgid "Name:"
+#~ msgstr "Имя:"
 
 #~ msgid "out"
 #~ msgstr "выход"
 
-#~ msgid "VoiceKey.Webaccess"
-#~ msgstr "VoiceKey.Webaccess"
+#~ msgid "report"
+#~ msgstr "Отчет"
 
-#~ msgid "(acquired: {{con.licenses_acquired}})"
-#~ msgstr "(использовано: {{con.licenses_acquired}})"
+#~ msgid "saved..."
+#~ msgstr "сохранено..."
 
-#~ msgid "Hasp not found"
-#~ msgstr "Hasp не найден"
+#~ msgid "startDate"
+#~ msgstr "Дата старта"
 
-#~ msgid "Licenses"
-#~ msgstr "Сервер лицензий"
+#~ msgid "Task"
+#~ msgstr "Задание"
 
-#~ msgid "licensing page"
-#~ msgstr "страница лицензий"
+#~ msgid "VoiceKey.FRAUD"
+#~ msgstr "VoiceKey.FRAUD"
+
+#~ msgid "startTime"
+#~ msgstr "время старта"
+
+#~ msgid "Add folder"
+#~ msgstr "Добавить папку"
+
+#~ msgid "Configuration management system"
+#~ msgstr "Система управления конфигурацией"
+
+#~ msgid "folders"
+#~ msgstr "папки"
+
+#~ msgid "tasks"
+#~ msgstr "задания"
+
+#~ msgid "new folder"
+#~ msgstr "новая папка"
 
 #~ msgid "calibration"
 #~ msgstr "Калибровка"
 
 #~ msgid "configuration"
 #~ msgstr "Конфигурация"
-
-#~ msgid "Configuration management system"
-#~ msgstr "Система управления конфигурацией"
 
 #~ msgid "docker"
 #~ msgstr "Развертывание"

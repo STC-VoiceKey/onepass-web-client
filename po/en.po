@@ -2,109 +2,1066 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-06-27 13:08+0300\n"
+"PO-Revision-Date: 2017-09-29 15:02+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#~ msgid "Account"
-#~ msgstr "Account"
+#: templates\main.html:4
+msgid ""
+"<p>This is the demo-example that introduces the technology of the bimodal "
+"biometric authentication by face and voice and represents OnePass cloud "
+"service provided by the STC-innovation Ltd. The technology proposed can be "
+"used in different cases as the alternative or as the additional factor of "
+"authentication to the system.</p><p>In this demo it’s possible to create "
+"your own biometrical password and go through the verification.</p><p>First "
+"you need to create your biometric profile. So, go to the Registration.</"
+"p><p>Put your e-mail address and make a photo via your web-cam.</p><p>After "
+"that pronounce the digits on your screen: one point after another, three "
+"times.</p><p>When done you can try to authenticate to the system via going "
+"through the biometrical verification.</p><p>Go to the LogIn, put your e-mail "
+"and pronounce the digits of your screen while looking to your web-cam.</p>"
+msgstr ""
+"<p>This is the demo-example that introduces the technology of the bimodal "
+"biometric authentication by face and voice and represents OnePass cloud "
+"service provided by the STC-innovation Ltd. The technology proposed can be "
+"used in different cases as the alternative or as the additional factor of "
+"authentication to the system.</p><p>In this demo it’s possible to create "
+"your own biometrical password and go through the verification.</p><p>First "
+"you need to create your biometric profile. So, go to the Registration.</"
+"p><p>Put your e-mail address and make a photo via your web-cam.</p><p>After "
+"that pronounce the digits on your screen: one point after another, three "
+"times.</p><p>When done you can try to authenticate to the system via going "
+"through the biometrical verification.</p><p>Go to the LogIn, put your e-mail "
+"and pronounce the digits of your screen while looking to your web-cam.</p>"
 
-#~ msgid "Account Available"
-#~ msgstr "Account Available"
+#: templates\main.html:6
+msgid "Account exists"
+msgstr "Account exists"
 
-#~ msgid "Account Name"
-#~ msgstr "Account Name"
+#: templates\main.html:7
+msgid "Account not found"
+msgstr "Account not found"
 
-#~ msgid "Accounts"
-#~ msgstr "Accounts"
+#: templates\popups.html:27
+msgid "Agree and continue"
+msgstr "Agree and continue"
 
-#~ msgid "Cards"
-#~ msgstr "Cards"
+#: templates\registration.html:22
+msgid "All set up and ready to go"
+msgstr "All set up and ready to go"
 
-#~ msgid "Credits"
-#~ msgstr "Credits"
+#: templates\popups.html:114 templates\popups.html:58 templates\popups.html:78
+#: templates\registration.html:28 templates\registration.html:8
+#: templates\verification.html:14
+msgid "Cancel"
+msgstr "Cancel"
 
-#~ msgid "Currency"
-#~ msgstr "Currency"
+#: templates\logout.html:3
+msgid "Delete account"
+msgstr "Delete account"
 
-#~ msgid "Current Balance"
-#~ msgstr "Current Balance"
+#: templates\popups.html:26
+msgid "Disagree"
+msgstr "Disagree"
+
+#: templates\registration.html:29
+msgid "Done"
+msgstr "Done"
+
+#: templates\main.html:8 templates\translated.html:1
+msgid "Email"
+msgstr "Email"
+
+#: templates\logout.html:2 templates\profile.html:4
+msgid "Exit"
+msgstr "Exit"
+
+#: templates\popups.html:39 templates\popups.html:91
+msgid "Eyes closed"
+msgstr "Eyes closed"
+
+#: templates\popups.html:111 templates\popups.html:8
+msgid "Find a well lit place"
+msgstr "Find a well lit place"
+
+#: templates\popups.html:5
+msgid "For the best results"
+msgstr "For the best results"
+
+#: templates\popups.html:67
+msgid "Give it another recording"
+msgstr "Give it another recording"
+
+#: templates\popups.html:35
+msgid "Give it another shot"
+msgstr "Give it another shot"
+
+#: templates\popups.html:22
+msgid ""
+"I understand that the system will process my biometrical data and agree to "
+"take a selfie and record voice samples"
+msgstr ""
+"I understand that the system will process my biometrical data and agree to "
+"take a selfie and record voice samples"
+
+#: templates\popups.html:75
+msgid "Incorrect pronunciation"
+msgstr "Incorrect pronunciation"
+
+#: templates\registration.html:17
+msgid "Last one"
+msgstr "Last one"
+
+#: templates\popups.html:107 templates\popups.html:12
+msgid "Make sure it's quiet"
+msgstr "Make sure it's quiet"
+
+#: templates\verification.html:5
+msgid ""
+"Make sure you look directly to the camera and press \"REC\" button to start "
+"the recording. At the same time pronounce the following digits and press "
+"\"STOP\" button when done"
+msgstr ""
+"Make sure you look directly to the camera and press \"REC\" button to start "
+"the recording. At the same time pronounce the following digits and press "
+"\"STOP\" button when done"
+
+#: templates\registration.html:5
+msgid "Make sure you look directly to the camera and press the button"
+msgstr "Make sure you look directly to the camera and press the button"
+
+#: templates\popups.html:20
+msgid "Make your ordinary face"
+msgstr "Make your ordinary face"
+
+#: templates\popups.html:55
+msgid "No face detected"
+msgstr "No face detected"
+
+#: templates\main.html:3
+msgid "OnePass Demo"
+msgstr "OnePass Demo"
+
+#: templates\popups.html:43 templates\popups.html:95
+msgid "Other faces detected"
+msgstr "Other faces detected"
+
+#: templates\404.html:1
+msgid "Page not found (404)"
+msgstr "Page not found (404)"
+
+#: templates\popups.html:51
+msgid "Poor image quality"
+msgstr "Poor image quality"
+
+#: templates\popups.html:103
+msgid "Poor video quality"
+msgstr "Poor video quality"
+
+#: templates\popups.html:36 templates\popups.html:68 templates\popups.html:88
+msgid "Possible reasons:"
+msgstr "Possible reasons:"
+
+#: templates\registration.html:21
+msgid "Press the REC button and pronounce following digits:"
+msgstr "Press the REC button and pronounce following digits:"
+
+#: templates\registration.html:26 templates\verification.html:12
+msgid "REC"
+msgstr "REC"
+
+#: templates\main.html:10
+msgid "Registration"
+msgstr "Registration"
+
+#: templates\registration.html:19
+msgid "Registration complete"
+msgstr "Registration complete"
+
+#: templates\registration.html:15
+msgid "Selfie: done"
+msgstr "Selfie: done"
+
+#: templates\registration.html:27 templates\verification.html:13
+msgid "STOP"
+msgstr "STOP"
+
+#: templates\popups.html:47 templates\popups.html:99
+msgid "Take off sunglasses"
+msgstr "Take off sunglasses"
+
+#: templates\popups.html:16
+msgid "Take off sunglasses(agree)"
+msgstr "Take off sunglasses"
+
+#: templates\popups.html:4
+msgid "Terms and conditions of use"
+msgstr "Terms and conditions of use"
+
+#: templates\popups.html:71
+msgid "Too noisy"
+msgstr "Too noisy"
+
+#: templates\popups.html:115 templates\popups.html:59 templates\popups.html:79
+msgid "Try again"
+msgstr "Try again"
+
+#: templates\registration.html:16
+msgid "Two to go"
+msgstr "Two to go"
+
+#: templates\main.html:9
+msgid "Verification"
+msgstr "Verification"
+
+#~ msgid ""
+#~ "This is the demo-example that introduces the technology of the bimodal "
+#~ "biometric authentication by face and voice and represents OnePass cloud "
+#~ "service provided by the STC-innovation Ltd. The technology proposed can "
+#~ "be used in different cases as the alternative or as the additional factor "
+#~ "of authentication to the system.<br>In this demo it’s possible to create "
+#~ "your own biometrical password and go through the verification.<br>First "
+#~ "you need to create your biometric profile. So, go to the Registration."
+#~ "<br>Put your e-mail address and make a photo via your web-cam.<br>After "
+#~ "that pronounce the digits on your screen: one point after another, three "
+#~ "times.<br>When done you can try to authenticate to the system via going "
+#~ "through the biometrical verification.<br>Go to the LogIn, put your e-mail "
+#~ "and pronounce the digits of your screen while looking to your web-cam."
+#~ msgstr ""
+#~ "This is the demo-example that introduces the technology of the bimodal "
+#~ "biometric authentication by face and voice and represents OnePass cloud "
+#~ "service provided by the STC-innovation Ltd. The technology proposed can "
+#~ "be used in different cases as the alternative or as the additional factor "
+#~ "of authentication to the system.<br>In this demo it’s possible to create "
+#~ "your own biometrical password and go through the verification.<br>First "
+#~ "you need to create your biometric profile. So, go to the Registration."
+#~ "<br>Put your e-mail address and make a photo via your web-cam.<br>After "
+#~ "that pronounce the digits on your screen: one point after another, three "
+#~ "times.<br>When done you can try to authenticate to the system via going "
+#~ "through the biometrical verification.<br>Go to the LogIn, put your e-mail "
+#~ "and pronounce the digits of your screen while looking to your web-cam."
+
+#~ msgid ""
+#~ "After that pronounce the digits on your screen: one point after another, "
+#~ "three times."
+#~ msgstr ""
+#~ "After that pronounce the digits on your screen: one point after another, "
+#~ "three times."
+
+#~ msgid ""
+#~ "First you need to create your biometric profile. So, go to the "
+#~ "Registration."
+#~ msgstr ""
+#~ "First you need to create your biometric profile. So, go to the "
+#~ "Registration."
+
+#~ msgid ""
+#~ "Go to the LogIn, put your e-mail and pronounce the digits of your screen "
+#~ "while looking to your web-cam."
+#~ msgstr ""
+#~ "Go to the LogIn, put your e-mail and pronounce the digits of your screen "
+#~ "while looking to your web-cam."
+
+#~ msgid ""
+#~ "In this demo it’s possible to create your own biometrical password and go "
+#~ "through the verification."
+#~ msgstr ""
+#~ "In this demo it’s possible to create your own biometrical password and go "
+#~ "through the verification."
+
+#~ msgid "Put your e-mail address and make a photo via your web-cam."
+#~ msgstr "Put your e-mail address and make a photo via your web-cam."
+
+#~ msgid ""
+#~ "This is the demo-example that introduces the technology of the bimodal "
+#~ "biometric authentication by face and voice and represents OnePass cloud "
+#~ "service provided by the STC-innovation Ltd. The technology proposed can "
+#~ "be used in different cases as the alternative or as the additional factor "
+#~ "of authentication to the system."
+#~ msgstr ""
+#~ "This is the demo-example that introduces the technology of the bimodal "
+#~ "biometric authentication by face and voice and represents OnePass cloud "
+#~ "service provided by the STC-innovation Ltd. The technology proposed can "
+#~ "be used in different cases as the alternative or as the additional factor "
+#~ "of authentication to the system."
+
+#~ msgid ""
+#~ "When done you can try to authenticate to the system via going through the "
+#~ "biometrical verification."
+#~ msgstr ""
+#~ "When done you can try to authenticate to the system via going through the "
+#~ "biometrical verification."
+
+#~ msgid "&copy; 2017 Reporter. All rights reserved"
+#~ msgstr "&copy; 2017 Reporter. All rights reserved"
+
+#~ msgid "Action"
+#~ msgstr "Actions"
+
+#~ msgid "Add fields"
+#~ msgstr "Add fields"
+
+#~ msgid "All schedulers for template"
+#~ msgstr "All schedulers for template:"
+
+#~ msgid "Amount of days"
+#~ msgstr "Amount of days"
+
+#~ msgid "Choose date range"
+#~ msgstr "Generated reports for the period"
+
+#~ msgid "Choose domain"
+#~ msgstr "Choose domain"
+
+#~ msgid "Close"
+#~ msgstr "Close"
+
+#~ msgid "Column name"
+#~ msgstr "Column name"
+
+#~ msgid "Column name db"
+#~ msgstr "Column name in the data base"
+
+#~ msgid "Create"
+#~ msgstr "Create"
+
+#~ msgid "CUSTOM"
+#~ msgstr "CUSTOM"
 
 #~ msgid "Date"
 #~ msgstr "Date"
 
-#~ msgid "Description"
-#~ msgstr "Description"
+#~ msgid "DAY"
+#~ msgstr "DAY"
 
-#~ msgid "Edit profile"
-#~ msgstr "Edit profile"
+#~ msgid "Delete"
+#~ msgstr "Delete"
+
+#~ msgid "Delete after days"
+#~ msgstr "Delete after days"
+
+#~ msgid "Directory name"
+#~ msgstr "Directory name"
+
+#~ msgid "Edit"
+#~ msgstr "Edit"
+
+#~ msgid "Edit scheduler"
+#~ msgstr "Edit scheduler"
+
+#~ msgid "Export to"
+#~ msgstr "Export to"
+
+#~ msgid "Extantion files"
+#~ msgstr "Extantion files"
+
+#~ msgid "First generation"
+#~ msgstr "First generation"
+
+#~ msgid "INVALID"
+#~ msgstr "INVALID"
+
+#~ msgid "Last date"
+#~ msgstr "Last date generation"
+
+#~ msgid "Loading..."
+#~ msgstr "Loading..."
+
+#~ msgid "Log in"
+#~ msgstr "Log in"
 
 #~ msgid "login"
+#~ msgstr "Login"
+
+#~ msgid "Login"
 #~ msgstr "Login"
 
 #~ msgid "login button"
 #~ msgstr "login"
 
-#~ msgid "Main"
-#~ msgstr "Main"
+#~ msgid "MONTH"
+#~ msgstr "MONTH"
 
-#~ msgid "More"
-#~ msgstr "More"
+#~ msgid "Multiple value"
+#~ msgstr "Multiple value"
 
-#~ msgid "Payments"
-#~ msgstr "Payments"
+#~ msgid "Name"
+#~ msgstr "Name"
 
-#~ msgid "registration"
-#~ msgstr "registration"
+#~ msgid "NEW"
+#~ msgstr "NEW"
 
-#~ msgid "STC-Bank"
-#~ msgstr "STC-Bank"
+#~ msgid "New report"
+#~ msgstr "New report"
 
-#~ msgid "Transaction"
-#~ msgstr "Transaction"
+#~ msgid "New scheduler"
+#~ msgstr "New scheduler"
 
-#~ msgid "out"
-#~ msgstr "logout"
+#~ msgid "New template"
+#~ msgstr "New template"
 
-#~ msgid "VoiceKey.Webaccess"
-#~ msgstr "VoiceKey.Webaccess"
+#~ msgid "Next date"
+#~ msgstr "Next date generation"
 
-#~ msgid "(acquired: {{con.licenses_acquired}})"
-#~ msgstr "(acquired: {{con.licenses_acquired}})"
+#~ msgid "No schedulers"
+#~ msgstr "No schedulers"
 
-#~ msgid "Hasp not found"
-#~ msgstr "Hasp not found"
+#~ msgid "None"
+#~ msgstr "None"
 
-#~ msgid "Licenses"
-#~ msgstr "Licenses"
+#~ msgid "not found"
+#~ msgstr "User not found"
 
-#~ msgid "Consumers"
-#~ msgstr "Consumers"
+#~ msgid "Param name"
+#~ msgstr "Param name"
 
-#~ msgid "ID"
-#~ msgstr "ID"
+#~ msgid "Params"
+#~ msgstr "Params"
+
+#~ msgid "Password"
+#~ msgstr "Password"
+
+#~ msgid "Pause"
+#~ msgstr "Pause"
+
+#~ msgid "PAUSED"
+#~ msgstr "PAUSED"
+
+#~ msgid "Period"
+#~ msgstr "Period"
+
+#~ msgid "QUARTER"
+#~ msgstr "QUARTER"
+
+#~ msgid "Reports"
+#~ msgstr "Reports"
+
+#~ msgid "Request complete"
+#~ msgstr "Complete"
+
+#~ msgid "request error"
+#~ msgstr "Request error"
+
+#~ msgid "Request error, please check correctness"
+#~ msgstr "Request error, please check correctness"
+
+#~ msgid "Required value"
+#~ msgstr "Required value"
+
+#~ msgid "Result"
+#~ msgstr "Result"
+
+#~ msgid "RUNNING"
+#~ msgstr "RUNNING"
+
+#~ msgid "Save"
+#~ msgstr "Save"
+
+#~ msgid "Scheduler"
+#~ msgstr "Scheduler"
+
+#~ msgid "Search by reports"
+#~ msgstr "Search by reports"
+
+#~ msgid "Search by templates"
+#~ msgstr "Search by templates"
+
+#~ msgid "Shedulers is invalid:"
+#~ msgstr "The template has been changed, correct the following schedules:"
+
+#~ msgid "Sort:"
+#~ msgstr "Sort:"
+
+#~ msgid "Sql"
+#~ msgstr "Sql"
+
+#~ msgid "sql-param"
+#~ msgstr "Sql-param"
+
+#~ msgid "Start"
+#~ msgstr "Start"
+
+#~ msgid "State"
+#~ msgstr "Status"
+
+#~ msgid "Tag"
+#~ msgstr "Tag"
+
+#~ msgid "Tag unavailable"
+#~ msgstr "Tag unavailable"
+
+#~ msgid "Template"
+#~ msgstr "Template"
+
+#~ msgid "Templates"
+#~ msgstr "Templates"
+
+#~ msgid "The name of the directory on the server"
+#~ msgstr "Directory name on server"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "unauthorized"
+#~ msgstr "Incorrect password"
 
 #~ msgid "Value"
 #~ msgstr "Value"
 
-#~ msgid "licensing page"
-#~ msgstr "licensing page"
+#~ msgid "WEEK"
+#~ msgstr "WEEK"
+
+#~ msgid "YEAR"
+#~ msgstr "YEAR"
+
+#~ msgid "You are not logged in the system"
+#~ msgstr "You are not logged in the system"
+
+#~ msgid "You do not have permission to perform this operation"
+#~ msgstr "You do not have permission to perform this operation"
+
+#~ msgid "Export to CSV"
+#~ msgstr "Export to CSV"
+
+#~ msgid "File name"
+#~ msgstr "File name"
+
+#~ msgid "LAST_DAY_OF_MONTH"
+#~ msgstr "LAST_DAY_OF_MONTH"
+
+#~ msgid "Server report file"
+#~ msgstr "Server report file"
+
+#~ msgid "Request error"
+#~ msgstr "Request error"
+
+#~ msgid "Replace"
+#~ msgstr "Replace"
+
+#~ msgid "&copy; 2016 CRT-ARM. All rights reserved"
+#~ msgstr "&copy; 2016-2017 CRT - LdapSecurity. All rights reserved"
+
+#~ msgid "Active sessions"
+#~ msgstr "Active sessions"
+
+#~ msgid "candidateDuration"
+#~ msgstr "candidateDuration"
+
+#~ msgid "close"
+#~ msgstr "close"
+
+#~ msgid "File name for pattern"
+#~ msgstr "File name for pattern"
+
+#~ msgid "file1"
+#~ msgstr "file"
+
+#~ msgid "file2"
+#~ msgstr "files"
+
+#~ msgid "file3"
+#~ msgstr "files"
+
+#~ msgid "Folder name"
+#~ msgstr "Folder name"
+
+#~ msgid "Groups of privileges"
+#~ msgstr "Groups of privileges"
+
+#~ msgid "Groups persons"
+#~ msgstr "Groups persons"
+
+#~ msgid "Organisation unit"
+#~ msgstr "Organisation unit"
+
+#~ msgid "Query of roles"
+#~ msgstr "Query of roles"
+
+#~ msgid "referenceDuration"
+#~ msgstr "referenceDuration"
+
+#~ msgid "roles"
+#~ msgstr "Roles"
+
+#~ msgid "Roles"
+#~ msgstr "Roles"
+
+#~ msgid "sessions"
+#~ msgstr "Active sessions"
+
+#~ msgid "structure"
+#~ msgstr "Structure of rights"
+
+#~ msgid "Structure of rights"
+#~ msgstr "Structure of rights"
+
+#~ msgid "Synchronization result"
+#~ msgstr "Synchronization result"
+
+#~ msgid "Synchronize structure"
+#~ msgstr "Synchronize structure"
+
+#~ msgid "System groups"
+#~ msgstr "System groups"
+
+#~ msgid "Task name"
+#~ msgstr "Task name"
+
+#~ msgid "Update"
+#~ msgstr "Update"
+
+#~ msgid "Update roles cache"
+#~ msgstr "Update roles cache"
+
+#~ msgid "Update users cache"
+#~ msgstr "Update users cache"
+
+#~ msgid "users"
+#~ msgstr "Users"
+
+#~ msgid "Users"
+#~ msgstr "Users"
+
+#~ msgid "+ select folders"
+#~ msgstr "+ select folders"
+
+#~ msgid "add"
+#~ msgstr "add"
+
+#~ msgid "add folder"
+#~ msgstr "Add Folder"
+
+#~ msgid "Add persons"
+#~ msgstr "Add Persons"
+
+#~ msgid "add task"
+#~ msgstr "Add Task"
+
+#~ msgid "Calibration"
+#~ msgstr "Calibration"
+
+#~ msgid "cancel"
+#~ msgstr "Cancel"
+
+#~ msgid "Check pattern"
+#~ msgstr "Check pattern"
+
+#~ msgid "Choose files"
+#~ msgstr "Choose files"
+
+#~ msgid "Components"
+#~ msgstr "Components"
+
+#~ msgid "delete"
+#~ msgstr "Delete"
+
+#~ msgid "Delete is not possible, the folder is used"
+#~ msgstr "Delete is not possible, the folder is used"
+
+#~ msgid "Folders"
+#~ msgstr "Folders"
+
+#~ msgid "Global settings"
+#~ msgstr "Global settings"
+
+#~ msgid "refresh"
+#~ msgstr "Refresh"
+
+#~ msgid "Remove folder"
+#~ msgstr "Remove folder"
+
+#~ msgid "Remove folder?"
+#~ msgstr "Remove folder?"
+
+#~ msgid "Remove person?"
+#~ msgstr "Remove person?"
+
+#~ msgid "Remove task"
+#~ msgstr "Remove task"
+
+#~ msgid "Remove task?"
+#~ msgstr "Remove task?"
+
+#~ msgid "Save changes"
+#~ msgstr "Save changes"
+
+#~ msgid "Search"
+#~ msgstr "Search component"
+
+#~ msgid "Server"
+#~ msgstr "Server"
+
+#~ msgid "Servers"
+#~ msgstr "Servers"
+
+#~ msgid "Settings"
+#~ msgstr "Settings"
+
+#~ msgid "settings version"
+#~ msgstr "settings version"
+
+#~ msgid "status"
+#~ msgstr "Status"
+
+#~ msgid "Tasks"
+#~ msgstr "Tasks"
+
+#~ msgid "Threshold"
+#~ msgstr "Threshold"
+
+#~ msgid "validate"
+#~ msgstr "Validate"
+
+#~ msgid "{{event.count}} events"
+#~ msgstr "{{event.count}} events"
+
+#~ msgid "Add"
+#~ msgstr "Add"
+
+#~ msgid "Add list"
+#~ msgstr "Add list"
+
+#~ msgid "Add to black list"
+#~ msgstr "Add to black list"
+
+#~ msgid "Add to cluster"
+#~ msgstr "Add to cluster"
+
+#~ msgid "all events for period"
+#~ msgstr "All events for period"
+
+#~ msgid "Amount"
+#~ msgstr "Amount"
+
+#~ msgid "Author"
+#~ msgstr "Author"
+
+#~ msgid "black list"
+#~ msgstr "Black list"
+
+#~ msgid "Black list \"{{list.name}}\""
+#~ msgstr "Black list \"{{list.name}}\""
+
+#~ msgid "Black list delete"
+#~ msgstr "Black list will be deleted!"
+
+#~ msgid "Black list name"
+#~ msgstr "Name"
+
+#~ msgid "Black lists"
+#~ msgstr "Black lists"
+
+#~ msgid "BLACK_LISTED"
+#~ msgstr "BLACK LIST"
+
+#~ msgid "Cancel action"
+#~ msgstr "Cancel action"
+
+#~ msgid "Cancel impossible"
+#~ msgstr "Cancel impossible, refresh event"
+
+#~ msgid "Chars left: {{50 - blacklist_name.length}}"
+#~ msgstr "Chars left: {{50 - blacklist_name.length}}"
+
+#~ msgid "Chars left: {{50 - list.rename.length}}"
+#~ msgstr "Chars left: {{50 - list.rename.length}}"
+
+#~ msgid "Chars left: {{50 - tracks.new_cluster_name.length}}"
+#~ msgstr "Chars left: {{50 - tracks.new_cluster_name.length}}"
+
+#~ msgid "Chars left: {{50 - tracks.rename_list.length}}"
+#~ msgstr "Chars left: {{50 - tracks.rename_list.length}}"
+
+#~ msgid "Choose blacklist"
+#~ msgstr "Choose blacklist to which add record"
+
+#~ msgid "Cluster {{tracks.event.type}} \"{{tracks.cluster.name}}\""
+#~ msgstr "Cluster {{tracks.event.type}} \"{{tracks.cluster.name}}\""
+
+#~ msgid "cluster id"
+#~ msgstr "cluster ID"
+
+#~ msgid "cluster vc"
+#~ msgstr "cluster VC"
+
+#~ msgid "CLUSTERED"
+#~ msgstr "Added to cluster"
+
+#~ msgid "Clusters ID"
+#~ msgstr "Clusters ID"
+
+#~ msgid "Clusters VC"
+#~ msgstr "Clusters VC"
+
+#~ msgid "Control clusters"
+#~ msgstr "Clusters control"
+
+#~ msgid "control panel"
+#~ msgstr "Control panel"
+
+#~ msgid "Create new cluster"
+#~ msgstr "Create new cluster"
+
+#~ msgid "Daily:"
+#~ msgstr "Launch daily:"
+
+#~ msgid "Date creation"
+#~ msgstr "Creation date"
+
+#~ msgid "Default"
+#~ msgstr "Regular check"
+
+#~ msgid "Delete list"
+#~ msgstr "Delete list"
+
+#~ msgid "Edit list"
+#~ msgstr "Edit list"
+
+#~ msgid "Enter new name for black list"
+#~ msgstr "Enter new name for black list"
+
+#~ msgid "Enter new name for cluster"
+#~ msgstr "Enter new name for cluster"
+
+#~ msgid "Enter new name for list"
+#~ msgstr "Enter new name for list"
+
+#~ msgid "Enter new name for track"
+#~ msgstr "Enter new name for recording"
+
+#~ msgid "Enter title new cluster"
+#~ msgstr "Enter name for new cluster"
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+#~ msgid "events"
+#~ msgstr "all"
+
+#~ msgid "Events"
+#~ msgstr "Events"
+
+#~ msgid "Fraud events"
+#~ msgstr "Fraud events"
+
+#~ msgid "Fraud tracks"
+#~ msgstr "Fraud recordings"
+
+#~ msgid "Frauds"
+#~ msgstr "Fraudsters"
+
+#~ msgid "frauds for period"
+#~ msgstr "Fraudsters for period"
+
+#~ msgid "Group ID: {{list.tracks.group_id}}"
+#~ msgstr "Group ID: {{list.tracks.group_id}}"
+
+#~ msgid "history"
+#~ msgstr "History"
+
+#~ msgid "history inspections"
+#~ msgstr "History of checks"
+
+#~ msgid "Import black list"
+#~ msgstr "Import black list"
+
+#~ msgid "Include"
+#~ msgstr "Include in check"
+
+#~ msgid "inspect BL"
+#~ msgstr "Black list check"
+
+#~ msgid "inspect ID"
+#~ msgstr "Cluster ID"
+
+#~ msgid "inspect VC"
+#~ msgstr "Cluster VC"
+
+#~ msgid "inspected type"
+#~ msgstr "Type of check"
+
+#~ msgid ""
+#~ "Inspection for {{inspections.events.date.day}}.{{inspections.events.date."
+#~ "month}}.{{inspections.events.date.year}}"
+#~ msgstr ""
+#~ "Check for {{inspections.events.date.day}}.{{inspections.events.date."
+#~ "month}}.{{inspections.events.date.year}}"
+
+#~ msgid "Inspections period"
+#~ msgstr "History of checks period"
+
+#~ msgid "inspections1"
+#~ msgstr "check"
+
+#~ msgid "inspections2"
+#~ msgstr "checks"
+
+#~ msgid "inspections3"
+#~ msgstr "checks"
+
+#~ msgid "Intro text"
+#~ msgstr "To get started, select the event on the left side"
+
+#~ msgid "is csv"
+#~ msgstr ""
+#~ "In folder <b>\"{{browse.children[browse.selected].name}}\"</b> .csv file "
+#~ "is found. The channel for import will be selected automatically."
+
+#~ msgid "Launch now"
+#~ msgstr "Launch now"
+
+#~ msgid "Launched"
+#~ msgstr "Launched"
+
+#~ msgid "Left"
+#~ msgstr "Left"
+
+#~ msgid "Name BL"
+#~ msgstr "Black list name"
+
+#~ msgid "Name cluster"
+#~ msgstr "Cluster name"
+
+#~ msgid "New cluster"
+#~ msgstr "New cluster"
+
+#~ msgid "New name"
+#~ msgstr "New name"
+
+#~ msgid "no csv"
+#~ msgstr ""
+#~ "In folder <b>\"{{browse.children[browse.selected].name}}\"</b> .csv file "
+#~ "is not found. Listen the recordings and choose the channel for import."
+
+#~ msgid "Not fraud"
+#~ msgstr "Not a fraudster"
+
+#~ msgid "OK"
+#~ msgstr "Processed"
+
+#~ msgid "Remove"
+#~ msgstr "Remove from list"
+
+#~ msgid "Rename"
+#~ msgstr "Rename"
+
+#~ msgid "Right"
+#~ msgstr "Right"
+
+#~ msgid "save"
+#~ msgstr "Save changes"
+
+#~ msgid "saved"
+#~ msgstr "Saved"
+
+#~ msgid "Select all"
+#~ msgstr "Select all"
+
+#~ msgid "settings"
+#~ msgstr "Settings"
+
+#~ msgid "Settings not saved"
+#~ msgstr "All changes won't be saved"
+
+#~ msgid "StartTime:"
+#~ msgstr "Launch time:"
+
+#~ msgid "Time"
+#~ msgstr "Time"
+
+#~ msgid "Title"
+#~ msgstr "Title"
+
+#~ msgid "Track delete"
+#~ msgstr "Ricording will be deleted!"
+
+#~ msgid "Track deleted"
+#~ msgstr "Recording is deleted. Listening is unavailable."
+
+#~ msgid "Track duration"
+#~ msgstr "Recording duration"
+
+#~ msgid "Track to black list"
+#~ msgstr "Add to Black list"
+
+#~ msgid "Tracks amount: {{list.tracks.calls.length}}"
+#~ msgstr "Amount of recordings: {{list.tracks.calls.length}}"
+
+#~ msgid "Tracks amount: {{tracks.new_cluster_checked_results.length}}"
+#~ msgstr "Amount of recordings: {{tracks.new_cluster_checked_results.length}}"
+
+#~ msgid "Tracks included in the cluster"
+#~ msgstr "Recordings included in cluster"
+
+#~ msgid "Tracks is not selected"
+#~ msgstr "To create a new sluster 2 recordings should be selected at least"
+
+#~ msgid "Chars left: {{50 - tracks.rename_cluster.length}}"
+#~ msgstr "Chars left: {{50 - tracks.rename_cluster.length}}"
+
+#~ msgid "history inspection"
+#~ msgstr "History inspection"
+
+#~ msgid "is processing..."
+#~ msgstr "is processing..."
+
+#~ msgid "Launches"
+#~ msgstr "Launches"
+
+#~ msgid "Name:"
+#~ msgstr "Name:"
+
+#~ msgid "out"
+#~ msgstr "logout"
+
+#~ msgid "report"
+#~ msgstr "Report"
+
+#~ msgid "saved..."
+#~ msgstr "saved..."
+
+#~ msgid "startDate"
+#~ msgstr "Date"
+
+#~ msgid "Task"
+#~ msgstr "Task"
+
+#~ msgid "VoiceKey.FRAUD"
+#~ msgstr "VoiceKey.FRAUD"
+
+#~ msgid "startTime"
+#~ msgstr "startTime"
+
+#~ msgid "get report"
+#~ msgstr "get report"
+
+#~ msgid "Add folder"
+#~ msgstr "Add folder"
+
+#~ msgid "Configuration management system"
+#~ msgstr "Configuration management system"
+
+#~ msgid "folders"
+#~ msgstr "folders"
+
+#~ msgid "tasks"
+#~ msgstr "tasks"
+
+#~ msgid "new folder"
+#~ msgstr "new folder"
 
 #~ msgid "calibration"
 #~ msgstr "Calibration"
 
 #~ msgid "configuration"
 #~ msgstr "Configuration"
-
-#~ msgid "Configuration management system"
-#~ msgstr "Configuration management system"
 
 #~ msgid "docker"
 #~ msgstr "Docker"

@@ -1,21 +1,29 @@
 'use strict'
 
-webaccessApp.controller('LogoutCtrl', ["$scope", 'MediaService', 'localStorageService', '$rootScope', '$location',
-	function($scope, MediaService, localStorageService, $rootScope, $location) {
-		var person = localStorageService.get("person");
-		if (person && person.auth) {
-			$rootScope.username = person.personId;
-		} else {
-			$location.url("/");
-			return;
-		}
-
+webaccessApp.controller('LogoutCtrl', ["$scope", 'localStorageService', '$location', 'Api', '$rootScope',
+	function($scope, localStorageService, $location, Api, $rootScope) {
+		
+		var person = localStorageService.get("personId");
+		
+		if(!person) $location.path("/");
+		
 		$scope.deleteAccount = function() {
-			MediaService.deleteAccount();
+
+			$rootScope.preloader = true;
+			
+			Api.deletePerson({
+				"id": person
+			}, function() {
+				$scope.logout();							
+			}, function(e) {
+				console.log(e);
+			}).$promise.finally(function(){
+				$rootScope.preloader = false;				
+			});;	
 		}
 
-		$scope.logOut = function() {
-			MediaService.logOut();
+		$scope.logout = function() {
+			$location.path("/");
 		}
 	}
 ]);

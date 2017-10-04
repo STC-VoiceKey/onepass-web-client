@@ -3,3 +3,193 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
+
+#: templates\main.html:4
+msgid "<p>This is the demo-example that introduces the technology of the bimodal biometric authentication by face and voice and represents OnePass cloud service provided by the STC-innovation Ltd. The technology proposed can be used in different cases as the alternative or as the additional factor of authentication to the system.</p><p>In this demo it’s possible to create your own biometrical password and go through the verification.</p><p>First you need to create your biometric profile. So, go to the Registration.</p><p>Put your e-mail address and make a photo via your web-cam.</p><p>After that pronounce the digits on your screen: one point after another, three times.</p><p>When done you can try to authenticate to the system via going through the biometrical verification.</p><p>Go to the LogIn, put your e-mail and pronounce the digits of your screen while looking to your web-cam.</p>"
+msgstr ""
+
+#: templates\main.html:6
+msgid "Account exists"
+msgstr ""
+
+#: templates\main.html:7
+msgid "Account not found"
+msgstr ""
+
+#: templates\popups.html:27
+msgid "Agree and continue"
+msgstr ""
+
+#: templates\registration.html:22
+msgid "All set up and ready to go"
+msgstr ""
+
+#: templates\popups.html:114
+#: templates\popups.html:58
+#: templates\popups.html:78
+#: templates\registration.html:28
+#: templates\registration.html:8
+#: templates\verification.html:14
+msgid "Cancel"
+msgstr ""
+
+#: templates\logout.html:3
+msgid "Delete account"
+msgstr ""
+
+#: templates\popups.html:26
+msgid "Disagree"
+msgstr ""
+
+#: templates\registration.html:29
+msgid "Done"
+msgstr ""
+
+#: templates\main.html:8
+#: templates\translated.html:1
+msgid "Email"
+msgstr ""
+
+#: templates\logout.html:2
+#: templates\profile.html:4
+msgid "Exit"
+msgstr ""
+
+#: templates\popups.html:39
+#: templates\popups.html:91
+msgid "Eyes closed"
+msgstr ""
+
+#: templates\popups.html:111
+#: templates\popups.html:8
+msgid "Find a well lit place"
+msgstr ""
+
+#: templates\popups.html:5
+msgid "For the best results"
+msgstr ""
+
+#: templates\popups.html:67
+msgid "Give it another recording"
+msgstr ""
+
+#: templates\popups.html:35
+msgid "Give it another shot"
+msgstr ""
+
+#: templates\popups.html:22
+msgid "I understand that the system will process my biometrical data and agree to take a selfie and record voice samples"
+msgstr ""
+
+#: templates\popups.html:75
+msgid "Incorrect pronunciation"
+msgstr ""
+
+#: templates\registration.html:17
+msgid "Last one"
+msgstr ""
+
+#: templates\popups.html:107
+#: templates\popups.html:12
+msgid "Make sure it's quiet"
+msgstr ""
+
+#: templates\verification.html:5
+msgid "Make sure you look directly to the camera and press \"REC\" button to start the recording. At the same time pronounce the following digits and press \"STOP\" button when done"
+msgstr ""
+
+#: templates\registration.html:5
+msgid "Make sure you look directly to the camera and press the button"
+msgstr ""
+
+#: templates\popups.html:20
+msgid "Make your ordinary face"
+msgstr ""
+
+#: templates\popups.html:55
+msgid "No face detected"
+msgstr ""
+
+#: templates\main.html:3
+msgid "OnePass Demo"
+msgstr ""
+
+#: templates\popups.html:43
+#: templates\popups.html:95
+msgid "Other faces detected"
+msgstr ""
+
+#: templates\404.html:1
+msgid "Page not found (404)"
+msgstr ""
+
+#: templates\popups.html:51
+msgid "Poor image quality"
+msgstr ""
+
+#: templates\popups.html:103
+msgid "Poor video quality"
+msgstr ""
+
+#: templates\popups.html:36
+#: templates\popups.html:68
+#: templates\popups.html:88
+msgid "Possible reasons:"
+msgstr ""
+
+#: templates\registration.html:21
+msgid "Press the REC button and pronounce following digits:"
+msgstr ""
+
+#: templates\registration.html:26
+#: templates\verification.html:12
+msgid "REC"
+msgstr ""
+
+#: templates\main.html:10
+msgid "Registration"
+msgstr ""
+
+#: templates\registration.html:19
+msgid "Registration complete"
+msgstr ""
+
+#: templates\registration.html:15
+msgid "Selfie: done"
+msgstr ""
+
+#: templates\registration.html:27
+#: templates\verification.html:13
+msgid "STOP"
+msgstr ""
+
+#: templates\popups.html:47
+#: templates\popups.html:99
+msgid "Take off sunglasses"
+msgstr ""
+
+#: templates\popups.html:16
+msgid "Take off sunglasses(agree)"
+msgstr ""
+
+#: templates\popups.html:4
+msgid "Terms and conditions of use"
+msgstr ""
+
+#: templates\popups.html:71
+msgid "Too noisy"
+msgstr ""
+
+#: templates\popups.html:115
+#: templates\popups.html:59
+#: templates\popups.html:79
+msgid "Try again"
+msgstr ""
+
+#: templates\registration.html:16
+msgid "Two to go"
+msgstr ""
+
+#: templates\main.html:9
+msgid "Verification"
+msgstr ""

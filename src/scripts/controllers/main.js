@@ -1,92 +1,103 @@
 'use strict'
 
-webaccessApp.controller('MainCtrl', ["$scope", 'storage', '$location', 'popup', 'localStorageService', '$rootScope',
-	function($scope, storage, $location, popup, localStorageService, $rootScope) {
-		var person = localStorageService.get("person");
-		if (person && person.auth) {
-			$location.url("/profile");
-			return;
+webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$location", "$rootScope",
+	function($scope, Api, localStorageService, $location, $rootScope) {
+
+		var init = function() {
+
+			$scope.main = {};
+			$scope.cancel();
+
 		}
 
-		localStorageService.remove("registration");
+		var verificationError = function(){
+			$scope.main.errorNotFound = true;
+		}
 
-		var _person;
-		var createPerson = function(personid) {
-			storage.add({
-				"personId": personid
-			}, function(response) {
-				console.log("person added: ", response);
-				localStorageService.clearAll();
-				localStorageService.set("id", personid);
-				document.location.href = "#/registration"; //fix for facedetection
+		var registrationError = function(){
+			$scope.main.errorExists = true;
+		}
+
+		var addPerson = function(id){
+			$rootScope.preloader = true;
+
+			Api.addPerson({
+				"id": id
+			}, function(person) {
+				localStorageService.set("transaction", person.transactionId);
+				$scope.main.agree = true;
 			}, function(e) {
-				console.log("person not added: ", e);
+				console.log(e);
+			}).$promise.finally(function(){
+				$rootScope.preloader = false;				
 			});
 		}
 
-		$scope.regForm = function() {
-			$scope.isReg = true;
-			$scope.inputError = "";
-		}
-
-		$scope.login = function(person) {
-			popup.visible();
-			storage.verify({
-				'person': person.id
-			}, function(response) {
-				localStorageService.clearAll();
-				response.personId = person.id;
-				response.auth = false;
-				localStorageService.set("person", response);
-				console.log("person infomation SUCCESS: ", response);
-				document.location.href = "#/login"; //fix for facedetection
+		var deletePerson = function(id){
+			$rootScope.preloader = true;
+			
+			Api.deletePerson({
+				"id": id
+			}, function() {
+				addPerson(id);
 			}, function(e) {
-				console.log("person not found (login): ", e);
-				$scope.inputError = "account not found";
-				popup.hidden();
-			})
-
+				console.log(e);
+			}).$promise.finally(function(){
+				$rootScope.preloader = false;				
+			});;	
 		}
 
-		$scope.start = function() {
-			popup.visible();
-			$scope.agree = false;
-			createPerson(_person.id);
-		}
 
-		$scope.cancel = function() {
-			localStorageService.clearAll();
-			$scope.agree = false;
+		$scope.verification = function(person) {
+			$rootScope.preloader = true;
+
+			Api.checkPerson({
+				"id": person.id
+			}, function(res) {
+				if (res.isFullEnroll) {
+					$location.path("verification");
+					localStorageService.set("personId", person.id);
+				} else { 
+					verificationError();
+				}
+			}, function(e) {
+				verificationError();
+			}).$promise.finally(function(){
+				$rootScope.preloader = false;				
+			});
 		}
 
 		$scope.registration = function(person) {
-			_person = person;
-			popup.visible();
-			$scope.inputError = "";
-			storage.check({
-				'person': person.id
-			}, function(response) {
+			$rootScope.preloader = true;
 
-				if (!response.isFullEnroll) {
-					console.log("person not full: ", response);
-					storage.delete({
-						'person': person.id
-					}, function(response) {
-						console.log("person deleted: ", response);
-						$scope.agree = true;
-						popup.hidden();
-					})
-				} else {
-					console.log("account is booked: ", response);
-					$scope.inputError = "account is booked";
-					popup.hidden();
-				}
-
+			Api.checkPerson({
+				"id": person.id
+			}, function(res) {
+				if (!res.isFullEnroll) deletePerson(person.id);
+					else registrationError();	
 			}, function(e) {
-				console.log("person not found(registration): ", e);
-				$scope.agree = true;
-				popup.hidden();
-			})
+				addPerson(person.id);
+			}).$promise.finally(function(){
+				$rootScope.preloader = false;				
+			});
 		}
+
+		$scope.agreeAccept = function() {
+			$location.path("registration");
+		}
+
+		$scope.cancel = function() {
+			$scope.main.agree = false;
+			$scope.main.errorNotFound = null;
+			$scope.main.errorExists = null;
+			localStorageService.remove("transaction", "personId");
+		}
+
+		$scope.change = function() {
+			$scope.cancel();
+		}
+
+		init();
+
 	}
 ]);
