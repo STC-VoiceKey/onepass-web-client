@@ -1,7 +1,6 @@
 webaccessApp.factory('Api', ['$resource', 'localStorageService',
 	function($resource, localStorageService) {
 
-		var rest = "https://onepass.tech/vkop/rest/";
 		
 		var session = function() {
 
@@ -21,12 +20,12 @@ webaccessApp.factory('Api', ['$resource', 'localStorageService',
 
 			session: {
 				method: 'POST',
-				url: rest + 'session'
+				url: sessionService + 'session'
 			},
 
 			checkSession: {
 				method: 'GET',
-				url: rest + 'session',
+				url: sessionService + 'session',
 				headers: {
 					'X-Session-Id': session
 				}
@@ -34,7 +33,7 @@ webaccessApp.factory('Api', ['$resource', 'localStorageService',
 
 			deleteSession: {
 				method: 'DELETE',
-				url: rest + 'session',
+				url: sessionService + 'session',
 				headers: {
 					'X-Session-Id': session
 				}	

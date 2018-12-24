@@ -35,28 +35,24 @@ webaccessApp.controller('RegistrationCtrl', ["$scope", "Api", "storage", "$locat
 		var createVideo = function(){
 			$rootScope.preloader = true;
 
-			navigator.getUserMedia({
+			navigator.mediaDevices.getUserMedia({
 				"video": true,
 				"audio": true
-			}, function(stream) {
+			}).then( function(stream) {
 				
 				$scope.$apply(function(){
 					$rootScope.preloader = false;	
 				});
 				
-				if ($scope.media.video.mozCaptureStream) {
-	            	$scope.media.video.mozSrcObject = stream;
-	            } else {
-	            	$scope.media.video.src = (window.URL && window.URL.createObjectURL(stream)) || stream;
-	            }
-				
+	            $scope.media.video.srcObject = stream;
 				$scope.media.vrec = new MediaStreamRecorder(stream);
 				$scope.media.vrec.stream = stream;
 				$scope.media.vrec.video = mergeProps($scope.media.video, {
 					muted: true
 				});
 
-			}, function(e){
+
+			}).catch(function(e){
 
 			});
 		}
@@ -65,9 +61,9 @@ webaccessApp.controller('RegistrationCtrl', ["$scope", "Api", "storage", "$locat
 			
 			$rootScope.preloader = true;
 
-			navigator.getUserMedia({
+			navigator.mediaDevices.getUserMedia({
 				"audio": true
-			}, function(stream) {
+			}).then(function(stream) {
 				$rootScope.preloader = false;
 
 				$scope.media.arec = new MediaStreamRecorder(stream);
@@ -88,7 +84,7 @@ webaccessApp.controller('RegistrationCtrl', ["$scope", "Api", "storage", "$locat
 				});
 
 
-			}, function(e){
+			}).catch(function(e){
 
 			});
 

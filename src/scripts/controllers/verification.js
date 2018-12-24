@@ -21,7 +21,7 @@ webaccessApp.controller('VerificationCtrl', ["$scope", "Api", "localStorageServi
 					
 					$scope.verification.password = verif.password;
 
-					localStorageService.set("transaction", verif.transactionId);
+					localStorageService.set("transaction", verif.transaction_id);
 
 				}, function(e){
 
@@ -68,22 +68,18 @@ webaccessApp.controller('VerificationCtrl', ["$scope", "Api", "localStorageServi
 		var createVideo = function(){
 			
 			$rootScope.preloader = true;
-
-			navigator.getUserMedia({
+			
+			navigator.mediaDevices.getUserMedia({
 				"video": true,
 				"audio": true
-			}, function(stream) {
+			}).then(function(stream) {
 				
 				$scope.$apply(function(){
 					$rootScope.preloader = false;	
 				});
 				
-				if ($scope.media.video.mozCaptureStream) {
-	            	$scope.media.video.mozSrcObject = stream;
-	            } else {
-	            	$scope.media.video.src = (window.URL && window.URL.createObjectURL(stream)) || stream;
-	            }
 				
+	            $scope.media.video.srcObject = stream;
 				$scope.media.vrec = new MediaStreamRecorder(stream);
 				$scope.media.vrec.mimeType = "video/webm";
 				$scope.media.vrec.stream = stream;
@@ -93,7 +89,6 @@ webaccessApp.controller('VerificationCtrl', ["$scope", "Api", "localStorageServi
 
 	
 				$scope.media.vrec.ondataavailable = function(blob) {
-					
 					if ($scope.verification.recording) {
 						$scope.verification.recording = false;
 						storage.getScreen();
@@ -103,7 +98,7 @@ webaccessApp.controller('VerificationCtrl', ["$scope", "Api", "localStorageServi
 
 				startVerirication();
 
-			}, function(e){
+			}).catch( function(e){
 				$scope.$apply(function(){
 					$rootScope.preloader = false;	
 				});
@@ -147,6 +142,7 @@ webaccessApp.controller('VerificationCtrl', ["$scope", "Api", "localStorageServi
 		}
 
 		$scope.decodePassword = function(text){
+			
 			var arr = text.split(" "),
 			language = config.getLanguage(),
 			arr2 = $scope.media.numbers[language],

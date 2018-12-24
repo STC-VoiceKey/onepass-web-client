@@ -6,22 +6,35 @@ webaccessApp.factory('loginService', ['Api', 'localStorageService', 'storage',
 		var methods = {
 			
 			login: function() {
-				Api.session({}, {
-					"username": "",
-					"password": "",
-					"domainId": 201
+				storage.devices().then(function(devices){
+					
+					var dev = [];
+					
+					for (var i = 0; i < devices.length; i++) {
+						dev.push({"kind":devices[i].kind, "label":devices[i].label});
 					}
 					
-				}, function(access) {
+					Api.session({}, {
+						"username": "vk_user",
+						"password": "123",
+						"domain_id": 201/*,
+						"device_info": JSON.stringify({
+							"OS": storage.getOS(),
+							"Browser": storage.getBrowser(),
+							"userAgent": storage.getUserAgent(),
+							"devices": dev
+						})*/
+						
+					}, function(access) {
+						
+						localStorageService.set("session", access.session_id);
 					
-					localStorageService.set("session", access.sessionId);
-				
-				}, function(e) {
+					}, function(e) {
 
-					console.log('login failed: ', e);
-				
+						console.log('login failed: ', e);
+					
+					});
 				});
-
 			},
 
 			isLogged: function() {

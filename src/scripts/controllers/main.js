@@ -26,7 +26,7 @@ webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$l
 			Api.addPerson({
 				"id": id
 			}, function(person) {
-				localStorageService.set("transaction", person.transactionId);
+				localStorageService.set("transaction", person.transaction_id);
 				localStorageService.set("personId", id);
 				$scope.main.agree = true;
 			}, function(e) {
@@ -59,7 +59,7 @@ webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$l
 			Api.checkPerson({
 				"id": person
 			}, function(res) {
-				if (res.isFullEnroll) {
+				if (res.is_full_enroll) {
 					$location.path("verification");
 					localStorageService.set("personId", person);
 				} else { 
@@ -78,7 +78,7 @@ webaccessApp.controller('MainCtrl', ["$scope", "Api", "localStorageService", "$l
 			Api.checkPerson({
 				"id": person
 			}, function(res) {
-				if (!res.isFullEnroll) deletePerson(person);
+				if (!res.is_full_enroll) deletePerson(person);
 					else registrationError();	
 			}, function(e) {
 				addPerson(person);
