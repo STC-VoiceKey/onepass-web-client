@@ -15,8 +15,8 @@ webaccessApp.factory('loginService', ['Api', 'localStorageService', 'storage',
 					}
 					
 					Api.session({}, {
-						"username": "vk_user",
-						"password": "123",
+						"username": "",
+						"password": "",
 						"domain_id": 201/*,
 						"device_info": JSON.stringify({
 							"OS": storage.getOS(),
